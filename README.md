@@ -4,16 +4,10 @@ A collection of animations for iOS, LBAnimate is a category on UIView to make an
 ## Examples ##
 
 ### Firework
-firework defaults:
-```
-delay is 0.0
-```
-```
-duration is 2.0
-```
-```
-numberOfTaps is 1
-```
+## Firework defaults:
+- delay default value -> 0.0
+- duration default value -> 2.0
+- numberOfTaps default value -> 1
 
 ```swift
 
