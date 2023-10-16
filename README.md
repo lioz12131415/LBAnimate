@@ -1,7 +1,6 @@
 # LBAnimate
-A collection of animations for iOS, LBAnimate is a category on UIView to make animations easy to perform.
+<p>A collection of animations for iOS, LBAnimate is a category on UIView to make animations easy to perform. <br></p>
 
-###<br>
 
 # Firework #
 
