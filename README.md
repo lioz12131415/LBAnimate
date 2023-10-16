@@ -1,9 +1,12 @@
 # LBAnimate
 A collection of animations for iOS, LBAnimate is a category on UIView to make animations easy to perform.
 
-## Examples ##
 
-### Firework
+## Firework ##
+
+![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/firework.gif)
+
+### Example ###
 
 ```swift
 
@@ -28,12 +31,11 @@ animation_view.lb_animate?.firework?.didTouch {
 }
 
 ```
-### default values:
+
+### default values: ###
 - delay -> 0
 - duration -> 2
 - numberOfTaps -> 1
 
-## Attention getters
 
-### Firework
-![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/firework.gif)
+
