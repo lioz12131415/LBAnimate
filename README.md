@@ -85,7 +85,7 @@ animation_view.lb_animate?.balloon?.didTouch {
 
 |default values:|
 |:---|
-|<p>- delay -> 0 <br> - maxScaleY -> 1.20 <br> - maxScaleX -> 1.20  <br> - minScaleX -> 0.90  <br> - minScaleY -> 0.90  <br> - duration -> 2</p>|
+|<p>- delay -> 0 <br> - duration -> 2 <br> - maxScaleY -> 1.20 <br> - maxScaleX -> 1.20  <br> - minScaleX -> 0.90  <br> - minScaleY -> 0.90</p>|
 
 ### Example ###
 ```swift
@@ -113,3 +113,35 @@ animation_view.lb_animate?.breathe?.start()
 animation_view.lb_animate?.breathe?.stop()
 ```
 
+<br>
+
+# Press #
+
+![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/press.gif)
+
+### Example ###
+
+|default values:|
+|:---|
+|<p>- delay -> 0 <br> - duration -> 0.50 <br> - minScaleX -> 0.90 <br> - minScaleY -> 0.90</p>|
+
+```swift
+
+@IBOutlet weak var animation_view: UIView!
+    
+pressButton.lb_animate?.press?
+    .delay(0.00)
+    .duration(0.50)
+    .minScaleX(0.90)
+    .minScaleY(0.90)
+    .attach()
+        
+pressButton.lb_animate?.press?.endPress {
+    /* Use If Needed Began Press */
+}
+        
+pressButton.lb_animate?.press?.beganPress {
+    /* Use If Needed Began Press */
+}
+
+```
