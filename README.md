@@ -145,3 +145,30 @@ pressButton.lb_animate?.press?.beganPress {
 }
 
 ```
+
+
+# Install #
+The recommended approach for installing LBAnimate is the CocoaPods package manager.
+
+Install CocoaPods if not already available:
+```
+$ sudo gem install cocoapods
+```
+
+Edit your Podfile and add LBAnimate:
+```
+platform :ios, '14.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'LBAnimate'
+end
+```
+
+Install into your project:
+```
+$ pod install
+```
+
+# Requirements #
+LBAnimate requires at least iOS 14 or above.
