@@ -35,8 +35,7 @@ animation_view.lb_animate?.firework?.didTouch {
 }
 
 ```
-<br></br>
-<br></br>
+</br>
 ## Balloon ##
 
 ![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/balloon.gif)
