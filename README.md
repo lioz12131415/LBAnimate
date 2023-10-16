@@ -10,9 +10,7 @@ A collection of animations for iOS, LBAnimate is a category on UIView to make an
 
 |default values:|
 |:---|
-|<p>- delay -> 0    <br> 
-    - duration -> 2 <br> 
-    - numberOfTaps -> 0 </p>|
+|<p>- delay -> 0 <br> - duration -> 2 <br> - numberOfTaps -> 0 </p>|
 
 ```swift
 
@@ -37,9 +35,10 @@ animation_view.lb_animate?.firework?.didTouch {
 }
 
 ```
-<br>
-<br>
-<br>
+<br></br>
+<br></br>
+<br></br>
+
 ## Balloon ##
 
 ![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/balloon.gif)
@@ -48,11 +47,7 @@ animation_view.lb_animate?.firework?.didTouch {
 
 |default values:|
 |:---|
-|<p>- delay -> 0    <br> 
-    - width -> 50   <br> 
-    - height -> 50  <br> 
-    - duration -> 2 <br> 
-    - numberOfTaps -> 0 </p>|
+|<p>- delay -> 0 <br> - width -> 50 <br> - height -> 50  <br> - duration -> 2 <br> - numberOfTaps -> 0 </p>|
 
 ```swift
 
