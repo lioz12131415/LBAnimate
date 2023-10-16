@@ -35,7 +35,44 @@ animation_view.lb_animate?.firework?.didTouch {
 ### default values: ###
 - delay -> 0
 - duration -> 2
-- numberOfTaps -> 1
+- numberOfTaps -> 0
 
 
+## Balloon ##
 
+![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/balloon.gif)
+
+### Example ###
+
+```swift
+
+@IBOutlet weak var animation_view: UIView!
+    
+animation_view.lb_animate?.balloon?
+    .delay(0)
+    .width(100)
+    .height(100)
+    .duration(2.0)
+    .numberOfTaps(2)
+    .attach(UIImage(named: "{ SOME IMAGE NAME }"))
+        
+animation_view.lb_animate?.balloon?.didStop {
+    /* Finish Balloon Animation */
+}
+        
+animation_view.lb_animate?.balloon?.didStart {
+    /* Start Balloon Animation */
+}
+        
+animation_view.lb_animate?.balloon?.didTouch {
+    /* Did Touch animation view */
+}
+
+```
+
+### default values: ###
+- delay -> 0
+- width -> 50
+- height -> 50
+- duration -> 2
+- numberOfTaps -> 0
