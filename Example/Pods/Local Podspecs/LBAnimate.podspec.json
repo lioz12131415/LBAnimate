@@ -20,6 +20,6 @@
   },
   "requires_arc": true,
   "swift_versions": "5.0",
-  "vendored_frameworks": "LBAnimate.xcframework",
+  "vendored_frameworks": "LBAnimate/LBAnimate.xcframework",
   "swift_version": "5.0"
 }
