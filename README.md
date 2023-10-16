@@ -34,7 +34,7 @@ animation_view.lb_animate?.firework?.didTouch {
 
 |default values|
 |:---|
-|- delay -> 0 /n - duration -> 2 - numberOfTaps -> 0|
+|- delay -> 0 \n - duration -> 2 - numberOfTaps -> 0|
 
 
 ## Balloon ##
