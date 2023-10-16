@@ -42,6 +42,13 @@ animation_view.lb_animate?.firework?.didTouch {
 
 ### Example ###
 
+### default values: ###
+- delay -> 0
+- width -> 50
+- height -> 50
+- duration -> 2
+- numberOfTaps -> 0
+
 ```swift
 
 @IBOutlet weak var animation_view: UIView!
@@ -67,10 +74,3 @@ animation_view.lb_animate?.balloon?.didTouch {
 }
 
 ```
-
-### default values: ###
-- delay -> 0
-- width -> 50
-- height -> 50
-- duration -> 2
-- numberOfTaps -> 0
