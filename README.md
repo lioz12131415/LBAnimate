@@ -2,7 +2,7 @@
 A collection of animations for iOS, LBAnimate is a category on UIView to make animations easy to perform.
 
 
-# <p><br>Firework</p> #
+# <br>Firework #
 
 ![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/firework.gif)
 
