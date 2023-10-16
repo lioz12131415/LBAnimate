@@ -146,6 +146,7 @@ pressButton.lb_animate?.press?.beganPress {
 
 ```
 
+<br>
 
 # Install #
 The recommended approach for installing LBAnimate is the CocoaPods package manager.
