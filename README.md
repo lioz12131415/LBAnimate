@@ -1,6 +1,32 @@
 # LBAnimate
-LB Animate Framework
+A collection of animations for iOS, LBAnimate is a category on UIView to make animations easy to perform.
 
+## Examples ##
+
+### Firework
+```swift
+
+@IBOutlet weak var animation_view: UIView!
+    
+animation_view.lb_animate?.firework?
+    .delay(0.0)
+    .duration(2.0)
+    .numberOfTaps(1)
+    .attach([UIImage(named: "{ SOME IMAGE NAME }" )])
+        
+animation_view.lb_animate?.firework?.didStop {
+    /* Finish Firework Animation */
+}
+        
+animation_view.lb_animate?.firework?.didStart {
+    /* Start Firework Animation */
+}
+        
+animation_view.lb_animate?.firework?.didTouch {
+    /* Did Touch animation view */
+}
+
+```
 
 ## Attention getters
 
