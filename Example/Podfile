@@ -1,0 +1,8 @@
+ platform :ios, '14.0'
+
+target 'LBAnimateExample' do
+  use_frameworks!
+
+ pod 'LBAnimate', :path => '../'
+
+end

@@ -1,0 +1,16 @@
+PODS:
+  - LBAnimate (0.0.1)
+
+DEPENDENCIES:
+  - LBAnimate (from `../`)
+
+EXTERNAL SOURCES:
+  LBAnimate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LBAnimate: d12f43d82c9fbf04f19daa10de78237cd4e24947
+
+PODFILE CHECKSUM: bd9222da5645c103ac5eb4f05eb3dd6b08c5b2cb
+
+COCOAPODS: 1.13.0

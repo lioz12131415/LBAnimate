@@ -1,0 +1,11 @@
+framework module LBAnimate {
+  umbrella header "LBAnimate.h"
+  export *
+
+  module * { export * }
+}
+
+module LBAnimate.Swift {
+  header "LBAnimate-Swift.h"
+  requires objc
+}

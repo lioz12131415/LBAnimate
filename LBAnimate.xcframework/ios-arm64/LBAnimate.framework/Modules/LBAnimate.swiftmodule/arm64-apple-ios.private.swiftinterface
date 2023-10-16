@@ -1,0 +1,168 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LBAnimate
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import LBAnimate
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension LBAnimate.UIView_LBAnimate.Balloon {
+  @discardableResult
+  public func width(_ newValue: Swift.Double) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloon {
+  @discardableResult
+  public func height(_ newValue: Swift.Double) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloon {
+  @discardableResult
+  public func didStop(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloon {
+  @discardableResult
+  public func didStart(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloon {
+  @discardableResult
+  public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Tap_Gesture_Style : LBAnimate.LBAnimate_Objc_Foundation {
+  open func add()
+  open func remove()
+  open func didTapped(_ sender: UIKit.UITapGestureRecognizer)
+  @discardableResult
+  public func numberOfTaps(_ newValue: Swift.Int) -> Self
+  @discardableResult
+  public func requireToFail(_ newValue: UIKit.UIGestureRecognizer) -> Self
+  @objc deinit
+}
+extension LBAnimate.UIView_LBAnimate.Press {
+  @discardableResult
+  public func minScaleY(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Press {
+  @discardableResult
+  public func minScaleX(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Press {
+  @discardableResult
+  public func endPress(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Press {
+  @discardableResult
+  public func beganPress(_ block: @escaping () -> Swift.Void) -> Self
+}
+@_hasMissingDesignatedInitializers public class LBAnimate_Objc_Foundation {
+  @discardableResult
+  public func delay(_ newValue: CoreFoundation.CGFloat) -> Self
+  @discardableResult
+  public func duration(_ newValue: CoreFoundation.CGFloat) -> Self
+  @objc deinit
+}
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers public class Firework : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
+    public init(_ parent: LBAnimate.UIView_LBAnimate, _ target: UIKit.UIView? = nil)
+    override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
+    public func attach(_ images: [UIKit.UIImage?])
+    public func detach()
+    @objc deinit
+  }
+}
+@_hasMissingDesignatedInitializers public class UIView_LBAnimate {
+  public var press: LBAnimate.UIView_LBAnimate.Press? {
+    get
+    set
+  }
+  public var balloon: LBAnimate.UIView_LBAnimate.Balloon? {
+    get
+    set
+  }
+  public var breathe: LBAnimate.UIView_LBAnimate.Breathe? {
+    get
+    set
+  }
+  public var firework: LBAnimate.UIView_LBAnimate.Firework? {
+    get
+    set
+  }
+  @objc deinit
+}
+extension LBAnimate.UIView_LBAnimate.Firework {
+  @discardableResult
+  public func didStop(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Firework {
+  @discardableResult
+  public func didStart(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Firework {
+  @discardableResult
+  public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers public class Press : LBAnimate.LBAnimate_Objc_Long_Press_Gesture_Style {
+    public init(_ parent: LBAnimate.UIView_LBAnimate, _ target: UIKit.UIView? = nil)
+    override public func began(_ sender: UIKit.UILongPressGestureRecognizer)
+    override public func ended(_ sender: UIKit.UILongPressGestureRecognizer)
+    override public func cancelled(_ sender: UIKit.UILongPressGestureRecognizer)
+    public func attach()
+    public func detach()
+    @objc deinit
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Long_Press_Gesture_Style : LBAnimate.LBAnimate_Objc_Foundation {
+  open func add()
+  open func remove()
+  open func ended(_ sender: UIKit.UILongPressGestureRecognizer)
+  open func began(_ sender: UIKit.UILongPressGestureRecognizer)
+  open func cancelled(_ sender: UIKit.UILongPressGestureRecognizer)
+  open func didTapped(_ sender: UIKit.UILongPressGestureRecognizer)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Repeat_Style : LBAnimate.LBAnimate_Objc_Foundation {
+  open func stop()
+  open func start()
+  @discardableResult
+  public func repeatCount(_ newValue: Swift.Int?) -> Self
+  @objc deinit
+}
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Balloon : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
+    override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
+    public func attach(_ image: UIKit.UIImage?)
+    public func detach()
+    @objc deinit
+  }
+}
+extension LBAnimate.UIView_LBAnimate.Breathe {
+  @discardableResult
+  public func minScaleY(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Breathe {
+  @discardableResult
+  public func minScaleX(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Breathe {
+  @discardableResult
+  public func maxScaleY(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Breathe {
+  @discardableResult
+  public func maxScaleX(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers public class Breathe : LBAnimate.LBAnimate_Objc_Repeat_Style {
+    public init(_ parent: LBAnimate.UIView_LBAnimate, _ target: UIKit.UIView? = nil)
+    override public func stop()
+    override public func start()
+    @objc deinit
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var lb_animate: LBAnimate.UIView_LBAnimate? {
+    get
+  }
+}
