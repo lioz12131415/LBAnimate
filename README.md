@@ -79,7 +79,7 @@ animation_view.lb_animate?.balloon?.didTouch {
 
 # Breathe #
 
-
+![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/breathe.gif)
 
 ### Example ###
 
