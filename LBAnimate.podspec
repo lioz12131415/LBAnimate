@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.platform               = :ios
     s.requires_arc           = true
     s.swift_version          = "5.0"
-    s.vendored_frameworks    = "LBAnimate/LBAnimate.xcframework"
+    s.vendored_frameworks    = "LBAnimate.xcframework"
     s.ios.deployment_target  = '14.0'
 
 end
