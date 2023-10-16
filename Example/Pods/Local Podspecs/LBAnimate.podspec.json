@@ -1,9 +1,10 @@
 {
   "name": "LBAnimate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "LBAnimate: Lioz Balki Animate Framework",
   "description": "The Lioz Balki SDK for iOS Animate framework provides:\n* UIVIEW Animations (Press, Firework, Breathe, Balloon)",
   "homepage": "https://github.com/lioz12131415/LBAnimate.git",
+  "readme": "https://raw.github.com/lioz12131415/LBAnimate/main/README.md",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/lioz12131415/LBAnimate.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "platforms": {
     "ios": "14.0"
