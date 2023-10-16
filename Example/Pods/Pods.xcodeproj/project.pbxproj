@@ -50,7 +50,7 @@
 		8214EDEBCBECAB23407FD2F968AD5592 /* LBAnimate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LBAnimate.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4F9A7825FAB3653735DD36F374972E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B3AE4C629DFA87DE4F3F55D4DF789FFE /* LBAnimate.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = LBAnimate.xcframework; path = LBAnimate/LBAnimate.xcframework; sourceTree = "<group>"; };
+		BCF83643CFB5805C4DFDDA20EEFD21D6 /* LBAnimate.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = LBAnimate.xcframework; sourceTree = "<group>"; };
 		D3EA017F9F65F0287D9DA46187790371 /* LBAnimate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LBAnimate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D69161F11ED516E07252B97741A41722 /* Pods-LBAnimateExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LBAnimateExample-frameworks.sh"; sourceTree = "<group>"; };
 		E588D17F5AD9999D171AA9CB66840BC9 /* Pods-LBAnimateExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LBAnimateExample"; path = Pods_LBAnimateExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,10 +69,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0227DCD2A21BC1E913A8670D41D04B56 /* Frameworks */ = {
+		09D46AF0C36BE284BC3D1386E88568DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3AE4C629DFA87DE4F3F55D4DF789FFE /* LBAnimate.xcframework */,
+				BCF83643CFB5805C4DFDDA20EEFD21D6 /* LBAnimate.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 		F9E2F057B38E749F4EC26FA9D5B3F014 /* LBAnimate */ = {
 			isa = PBXGroup;
 			children = (
-				0227DCD2A21BC1E913A8670D41D04B56 /* Frameworks */,
+				09D46AF0C36BE284BC3D1386E88568DA /* Frameworks */,
 				2138C31252B618EDD5A156F43A3FF4EF /* Pod */,
 				5823EF9EB6EA05BA67A233A908C4E911 /* Support Files */,
 			);

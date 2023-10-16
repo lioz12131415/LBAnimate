@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "LBAnimate"
-    s.version      = "0.0.1"
+    s.version      = "0.0.3"
     s.summary      = "LBAnimate: Lioz Balki Animate Framework"
     s.description  = "LBAnimate: Lioz Balki Animate Framework First Description"
     s.homepage     = "https://github.com/lioz12131415/LBAnimate.git"

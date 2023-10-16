@@ -1,6 +1,6 @@
 {
   "name": "LBAnimate",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "LBAnimate: Lioz Balki Animate Framework",
   "description": "LBAnimate: Lioz Balki Animate Framework First Description",
   "homepage": "https://github.com/lioz12131415/LBAnimate.git",
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/lioz12131415/LBAnimate.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "14.0"
   },
   "requires_arc": true,
   "swift_versions": "5.0",
-  "vendored_frameworks": "LBAnimate/LBAnimate.xcframework",
+  "vendored_frameworks": "LBAnimate.xcframework",
   "swift_version": "5.0"
 }
