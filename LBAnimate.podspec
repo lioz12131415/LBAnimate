@@ -2,8 +2,13 @@ Pod::Spec.new do |s|
     s.name         = "LBAnimate"
     s.version      = "0.0.3"
     s.summary      = "LBAnimate: Lioz Balki Animate Framework"
-    s.description  = "LBAnimate: Lioz Balki Animate Framework First Description"
-    s.homepage     = "https://github.com/lioz12131415/LBAnimate.git"
+    
+    s.description  = <<-DESC
+                   The Lioz Balki SDK for iOS Animate framework provides:
+                   * UIVIEW Animations (Press, Firework, Breathe, Balloon)
+                   DESC
+    
+    s.homepage = "https://github.com/lioz12131415/LBAnimate.git"
     
     s.license = {
         :type => "MIT", :file => "LICENSE"
