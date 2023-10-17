@@ -77,6 +77,69 @@ animation_view.lb_animate?.balloon?.didTouch {
 
 <br>
 
+# Position #
+
+![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/position.gif)
+
+### Example ###
+
+|default values:|
+|:---|
+|<p>- delay -> 0.00 <br> - duration -> 0.50 <br> - damping -> 1.00 <br> - velocity -> 1.00</p>|
+
+### Example ###
+```swift
+
+@IBOutlet weak var animation_view: UIView!
+    
+animation_view.lb_animate?.position?.center.x
+    .delay(0)
+    .damping(0.5)
+    .velocity(0.5)
+    .duration(0.5)
+    .change(to: /* New Center X Point */) { /* (Finish Animation) Use If Needed */ }
+        
+animation_view.lb_animate?.position?.center.y
+    .delay(0)
+    .damping(0.5)
+    .velocity(0.5)
+    .duration(0.5)
+    .change(to: /* New Center Y Point */ ) {  /* (Finish Animation) Use If Needed */ }
+
+```
+
+#### Min Y ####
+```swift 
+animation_view.lb_animate?.position?.minY
+```
+
+#### Min X ####
+```swift 
+animation_view.lb_animate?.position?.minX
+```
+
+#### Max Y ####
+```swift 
+animation_view.lb_animate?.position?.maxY
+```
+
+#### Max X ####
+```swift 
+animation_view.lb_animate?.position?.maxX
+```
+
+#### Center Y ####
+```swift 
+animation_view.lb_animate?.position?.center.y
+```
+
+#### Center X ####
+```swift 
+animation_view.lb_animate?.position?.center.x
+```
+
+<br>
+
 # Breathe #
 
 ![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/breathe.gif)

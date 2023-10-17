@@ -197,7 +197,8 @@
         "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation"
+          "LBAnimate.LBAnimate_Objc_Foundation",
+          "LBAnimate.LBAnimate_Objc_Core"
         ]
       },
       {
@@ -388,7 +389,46 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "superclassUsr": "s:9LBAnimate0A10_Objc_CoreC",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "LBAnimate.LBAnimate_Objc_Core"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
       },
       {
         "kind": "Import",
@@ -773,6 +813,114 @@
           },
           {
             "kind": "Var",
+            "name": "position",
+            "printedName": "position",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LBAnimate.UIView_LBAnimate.Position?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Position",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9LBAnimate07UIView_A0C8positionAC8PositionCSgvp",
+            "mangledName": "$s9LBAnimate07UIView_A0C8positionAC8PositionCSgvp",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Position",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C8positionAC8PositionCSgvg",
+                "mangledName": "$s9LBAnimate07UIView_A0C8positionAC8PositionCSgvg",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Position",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C8positionAC8PositionCSgvs",
+                "mangledName": "$s9LBAnimate07UIView_A0C8positionAC8PositionCSgvs",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C8positionAC8PositionCSgvM",
+                "mangledName": "$s9LBAnimate07UIView_A0C8positionAC8PositionCSgvM",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "firework",
             "printedName": "firework",
             "children": [
@@ -897,9 +1045,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView_LBAnimate",
-                    "printedName": "LBAnimate.UIView_LBAnimate",
-                    "usr": "s:9LBAnimate07UIView_A0C"
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView_LBAnimate",
+                        "printedName": "LBAnimate.UIView_LBAnimate",
+                        "usr": "s:9LBAnimate07UIView_A0C"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
@@ -918,8 +1074,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:9LBAnimate07UIView_A0C8FireworkCyAeC_So0B0CSgtcfc",
-                "mangledName": "$s9LBAnimate07UIView_A0C8FireworkCyAeC_So0B0CSgtcfc",
+                "usr": "s:9LBAnimate07UIView_A0C8FireworkCyAeCSg_So0B0CSgtcfc",
+                "mangledName": "$s9LBAnimate07UIView_A0C8FireworkCyAeCSg_So0B0CSgtcfc",
                 "moduleName": "LBAnimate",
                 "overriding": true,
                 "declAttributes": [
@@ -1155,7 +1311,536 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation"
+              "LBAnimate.LBAnimate_Objc_Foundation",
+              "LBAnimate.LBAnimate_Objc_Core"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Position",
+            "printedName": "Position",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "minX",
+                "printedName": "minX",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "X",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position.X",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC4minXAE1XCvp",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4minXAE1XCvp",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "X",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.X",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC4minXAE1XCvg",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4minXAE1XCvg",
+                    "moduleName": "LBAnimate",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "minY",
+                "printedName": "minY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Y",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position.Y",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC4minYAE1YCvp",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4minYAE1YCvp",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Y",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.Y",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC4minYAE1YCvg",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4minYAE1YCvg",
+                    "moduleName": "LBAnimate",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "maxX",
+                "printedName": "maxX",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "X",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position.X",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC4maxXAE1XCvp",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4maxXAE1XCvp",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "X",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.X",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC4maxXAE1XCvg",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4maxXAE1XCvg",
+                    "moduleName": "LBAnimate",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "maxY",
+                "printedName": "maxY",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Y",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position.Y",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC4maxYAE1YCvp",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4maxYAE1YCvp",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Y",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.Y",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC4maxYAE1YCvg",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC4maxYAE1YCvg",
+                    "moduleName": "LBAnimate",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "center",
+                "printedName": "center",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Center",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Position.Center",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvp",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvp",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "Lazy",
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Center",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.Center",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvg",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvg",
+                    "moduleName": "LBAnimate",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Center",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.Center",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvs",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvs",
+                    "moduleName": "LBAnimate",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvM",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6centerAE6CenterCvM",
+                    "moduleName": "LBAnimate",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "X",
+                "printedName": "X",
+                "children": [
+                  {
+                    "kind": "Function",
+                    "name": "change",
+                    "printedName": "change(to:completion:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(() -> ())?",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "() -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              }
+                            ]
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC6change2to10completiony14CoreFoundation7CGFloatV_yycSgtF",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC1XC6change2to10completiony12CoreGraphics7CGFloatV_yycSgtF",
+                    "moduleName": "LBAnimate",
+                    "overriding": true,
+                    "declAttributes": [
+                      "Override",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Class",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC1XC",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "superclassUsr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC",
+                "hasMissingDesignatedInitializers": true,
+                "inheritsConvenienceInitializers": true,
+                "superclassNames": [
+                  "LBAnimate.LBAnimate_Objc_Position_Axis_Style",
+                  "LBAnimate.LBAnimate_Objc_Bouncing_Style",
+                  "LBAnimate.LBAnimate_Objc_Foundation",
+                  "LBAnimate.LBAnimate_Objc_Core"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Y",
+                "printedName": "Y",
+                "children": [
+                  {
+                    "kind": "Function",
+                    "name": "change",
+                    "printedName": "change(to:completion:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(() -> ())?",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "() -> ()",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Void",
+                                "printedName": "()"
+                              }
+                            ]
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC6change2to10completiony14CoreFoundation7CGFloatV_yycSgtF",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC1YC6change2to10completiony12CoreGraphics7CGFloatV_yycSgtF",
+                    "moduleName": "LBAnimate",
+                    "overriding": true,
+                    "declAttributes": [
+                      "Override",
+                      "AccessControl",
+                      "RawDocComment"
+                    ],
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Class",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC1YC",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "superclassUsr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC",
+                "hasMissingDesignatedInitializers": true,
+                "inheritsConvenienceInitializers": true,
+                "superclassNames": [
+                  "LBAnimate.LBAnimate_Objc_Position_Axis_Style",
+                  "LBAnimate.LBAnimate_Objc_Bouncing_Style",
+                  "LBAnimate.LBAnimate_Objc_Foundation",
+                  "LBAnimate.LBAnimate_Objc_Core"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Center",
+                "printedName": "Center",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "x",
+                    "printedName": "x",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "X",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.X",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC1xAE1XCvp",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6CenterC1xAE1XCvp",
+                    "moduleName": "LBAnimate",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "X",
+                            "printedName": "LBAnimate.UIView_LBAnimate.Position.X",
+                            "usr": "s:9LBAnimate07UIView_A0C8PositionC1XC"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC1xAE1XCvg",
+                        "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6CenterC1xAE1XCvg",
+                        "moduleName": "LBAnimate",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "y",
+                    "printedName": "y",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Y",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Position.Y",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC1yAE1YCvp",
+                    "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6CenterC1yAE1YCvp",
+                    "moduleName": "LBAnimate",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Y",
+                            "printedName": "LBAnimate.UIView_LBAnimate.Position.Y",
+                            "usr": "s:9LBAnimate07UIView_A0C8PositionC1YC"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC1yAE1YCvg",
+                        "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6CenterC1yAE1YCvg",
+                        "moduleName": "LBAnimate",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Class",
+                "usr": "s:9LBAnimate07UIView_A0C8PositionC6CenterC",
+                "mangledName": "$s9LBAnimate07UIView_A0C8PositionC6CenterC",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "superclassUsr": "s:9LBAnimate0A10_Objc_CoreC",
+                "hasMissingDesignatedInitializers": true,
+                "inheritsConvenienceInitializers": true,
+                "superclassNames": [
+                  "LBAnimate.LBAnimate_Objc_Core"
+                ]
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:9LBAnimate07UIView_A0C8PositionC",
+            "mangledName": "$s9LBAnimate07UIView_A0C8PositionC",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "s:9LBAnimate0A10_Objc_CoreC",
+            "hasMissingDesignatedInitializers": true,
+            "inheritsConvenienceInitializers": true,
+            "superclassNames": [
+              "LBAnimate.LBAnimate_Objc_Core"
             ]
           },
           {
@@ -1176,9 +1861,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView_LBAnimate",
-                    "printedName": "LBAnimate.UIView_LBAnimate",
-                    "usr": "s:9LBAnimate07UIView_A0C"
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView_LBAnimate",
+                        "printedName": "LBAnimate.UIView_LBAnimate",
+                        "usr": "s:9LBAnimate07UIView_A0C"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1197,8 +1890,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:9LBAnimate07UIView_A0C5PressCyAeC_So0B0CSgtcfc",
-                "mangledName": "$s9LBAnimate07UIView_A0C5PressCyAeC_So0B0CSgtcfc",
+                "usr": "s:9LBAnimate07UIView_A0C5PressCyAeCSg_So0B0CSgtcfc",
+                "mangledName": "$s9LBAnimate07UIView_A0C5PressCyAeCSg_So0B0CSgtcfc",
                 "moduleName": "LBAnimate",
                 "overriding": true,
                 "declAttributes": [
@@ -1488,7 +2181,8 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Long_Press_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation"
+              "LBAnimate.LBAnimate_Objc_Foundation",
+              "LBAnimate.LBAnimate_Objc_Core"
             ]
           },
           {
@@ -1774,7 +2468,8 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation"
+              "LBAnimate.LBAnimate_Objc_Foundation",
+              "LBAnimate.LBAnimate_Objc_Core"
             ]
           },
           {
@@ -1795,9 +2490,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UIView_LBAnimate",
-                    "printedName": "LBAnimate.UIView_LBAnimate",
-                    "usr": "s:9LBAnimate07UIView_A0C"
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView_LBAnimate",
+                        "printedName": "LBAnimate.UIView_LBAnimate",
+                        "usr": "s:9LBAnimate07UIView_A0C"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   },
                   {
                     "kind": "TypeNominal",
@@ -1816,8 +2519,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:9LBAnimate07UIView_A0C7BreatheCyAeC_So0B0CSgtcfc",
-                "mangledName": "$s9LBAnimate07UIView_A0C7BreatheCyAeC_So0B0CSgtcfc",
+                "usr": "s:9LBAnimate07UIView_A0C7BreatheCyAeCSg_So0B0CSgtcfc",
+                "mangledName": "$s9LBAnimate07UIView_A0C7BreatheCyAeCSg_So0B0CSgtcfc",
                 "moduleName": "LBAnimate",
                 "overriding": true,
                 "declAttributes": [
@@ -2000,7 +2703,8 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Repeat_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation"
+              "LBAnimate.LBAnimate_Objc_Foundation",
+              "LBAnimate.LBAnimate_Objc_Core"
             ]
           }
         ],
@@ -2029,6 +2733,560 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBAnimate_Objc_Position_Axis_Style",
+        "printedName": "LBAnimate_Objc_Position_Axis_Style",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LBAnimate_Objc_Position_Axis_Style",
+                "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Point",
+                "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LBAnimate.UIView_LBAnimate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView_LBAnimate",
+                    "printedName": "LBAnimate.UIView_LBAnimate",
+                    "usr": "s:9LBAnimate07UIView_A0C"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleCyA2C5PointO_AA07UIView_A0CSgSo0G0CSgtcfc",
+            "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleCyA2C5PointO_AA07UIView_A0CSgSo0G0CSgtcfc",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "change",
+            "printedName": "change(to:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC6change2to10completiony14CoreFoundation7CGFloatV_yycSgtF",
+            "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC6change2to10completiony12CoreGraphics7CGFloatV_yycSgtF",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Point",
+            "printedName": "Point",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4noneyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4noneyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Var",
+                "name": "maxY",
+                "printedName": "maxY",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4maxYyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4maxYyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Var",
+                "name": "maxX",
+                "printedName": "maxX",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4maxXyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4maxXyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Var",
+                "name": "minY",
+                "printedName": "minY",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4minYyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4minYyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Var",
+                "name": "minX",
+                "printedName": "minX",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4minXyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4minXyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Var",
+                "name": "centerX",
+                "printedName": "centerX",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO7centerXyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO7centerXyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Var",
+                "name": "centerY",
+                "printedName": "centerY",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type) -> LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Point",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Point",
+                            "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO7centerYyA2EmF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO7centerYyA2EmF",
+                "moduleName": "LBAnimate"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Point",
+                    "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Point",
+                    "printedName": "LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point",
+                    "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO2eeoiySbAE_AEtFZ",
+                "moduleName": "LBAnimate",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO9hashValueSivp",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO9hashValueSivp",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO9hashValueSivg",
+                    "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO9hashValueSivg",
+                    "moduleName": "LBAnimate",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO4hash4intoys6HasherVz_tF",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO",
+            "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC5PointO",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9LBAnimate0A25_Objc_Position_Axis_StyleC",
+        "mangledName": "$s9LBAnimate0A25_Objc_Position_Axis_StyleC",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "LBAnimate.LBAnimate_Objc_Bouncing_Style",
+          "LBAnimate.LBAnimate_Objc_Foundation",
+          "LBAnimate.LBAnimate_Objc_Core"
+        ]
       },
       {
         "kind": "Import",
@@ -2231,8 +3489,26 @@
         "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation"
+          "LBAnimate.LBAnimate_Objc_Foundation",
+          "LBAnimate.LBAnimate_Objc_Core"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
       },
       {
         "kind": "Import",
@@ -2346,7 +3622,166 @@
         "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation"
+          "LBAnimate.LBAnimate_Objc_Foundation",
+          "LBAnimate.LBAnimate_Objc_Core"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBAnimate_Objc_Core",
+        "printedName": "LBAnimate_Objc_Core",
+        "declKind": "Class",
+        "usr": "s:9LBAnimate0A10_Objc_CoreC",
+        "mangledName": "$s9LBAnimate0A10_Objc_CoreC",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBAnimate_Objc_Bouncing_Style",
+        "printedName": "LBAnimate_Objc_Bouncing_Style",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "damping",
+            "printedName": "damping(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC7dampingyACXD14CoreFoundation7CGFloatVF",
+            "mangledName": "$s9LBAnimate0A20_Objc_Bouncing_StyleC7dampingyACXD12CoreGraphics7CGFloatVF",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "velocity",
+            "printedName": "velocity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC8velocityyACXD14CoreFoundation7CGFloatVF",
+            "mangledName": "$s9LBAnimate0A20_Objc_Bouncing_StyleC8velocityyACXD12CoreGraphics7CGFloatVF",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC",
+        "mangledName": "$s9LBAnimate0A20_Objc_Bouncing_StyleC",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "LBAnimate.LBAnimate_Objc_Foundation",
+          "LBAnimate.LBAnimate_Objc_Core"
         ]
       },
       {
@@ -2814,14 +4249,14 @@
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/Foundation\/LBAnimate_Objc_Foundation.swift",
       "kind": "FloatLiteral",
-      "offset": 316,
+      "offset": 246,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/Foundation\/LBAnimate_Objc_Foundation.swift",
       "kind": "FloatLiteral",
-      "offset": 358,
+      "offset": 288,
       "length": 4,
       "value": "0.00"
     },
@@ -2835,14 +4270,14 @@
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Firework\/UIView_LBAnimate.Firework.swift",
       "kind": "FloatLiteral",
-      "offset": 760,
+      "offset": 761,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Firework\/UIView_LBAnimate.Firework.swift",
       "kind": "FloatLiteral",
-      "offset": 793,
+      "offset": 794,
       "length": 4,
       "value": "2.00"
     },
@@ -2931,6 +4366,34 @@
       "value": "100"
     },
     {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
+      "kind": "FloatLiteral",
+      "offset": 430,
+      "length": 4,
+      "value": "0.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
+      "kind": "FloatLiteral",
+      "offset": 459,
+      "length": 4,
+      "value": "1.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
+      "kind": "FloatLiteral",
+      "offset": 488,
+      "length": 4,
+      "value": "1.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
+      "kind": "FloatLiteral",
+      "offset": 517,
+      "length": 4,
+      "value": "0.50"
+    },
+    {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
       "offset": 425,
@@ -2947,30 +4410,37 @@
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
-      "offset": 774,
+      "offset": 775,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
-      "offset": 807,
+      "offset": 808,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/LongPressGestureStyle\/LBAnimate_Objc_Long_Press_Gesture_Style.swift",
       "kind": "BooleanLiteral",
-      "offset": 564,
+      "offset": 565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/LongPressGestureStyle\/LBAnimate_Objc_Long_Press_Gesture_Style.swift",
       "kind": "FloatLiteral",
-      "offset": 614,
+      "offset": 615,
       "length": 4,
       "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Position\/X\/UIView_LBAnimate.Animations.Position.X.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3099,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
@@ -2989,44 +4459,65 @@
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 872,
+      "offset": 873,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 905,
+      "offset": 906,
       "length": 4,
       "value": "2.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 1976,
+      "offset": 1977,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 1984,
+      "offset": 1985,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "IntegerLiteral",
-      "offset": 2048,
+      "offset": 2049,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 2067,
+      "offset": 2068,
       "length": 5,
       "value": "180.0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Position\/Y\/UIView_LBAnimate.Animations.Position.Y.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3101,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/BouncingStyle\/LBAnimate_Objc_Bouncing_Style.swift",
+      "kind": "IntegerLiteral",
+      "offset": 266,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/BouncingStyle\/LBAnimate_Objc_Bouncing_Style.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
@@ -3059,14 +4550,14 @@
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 748,
+      "offset": 749,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 781,
+      "offset": 782,
       "length": 4,
       "value": "2.00"
     }

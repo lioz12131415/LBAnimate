@@ -23,6 +23,8 @@
 		BEEE66412ADD3CAB0072B675 /* BalloonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66402ADD3CAB0072B675 /* BalloonVC.swift */; };
 		BEEE66432ADD3CBC0072B675 /* BreatheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66422ADD3CBC0072B675 /* BreatheVC.swift */; };
 		BEEE66452ADD3CCB0072B675 /* FireworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66442ADD3CCB0072B675 /* FireworkVC.swift */; };
+		BEEE66A92ADE7D8A0072B675 /* Position.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEE66A82ADE7D8A0072B675 /* Position.storyboard */; };
+		BEEE66AC2ADE7DAC0072B675 /* PositionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66AB2ADE7DAC0072B675 /* PositionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		BEEE66402ADD3CAB0072B675 /* BalloonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonVC.swift; sourceTree = "<group>"; };
 		BEEE66422ADD3CBC0072B675 /* BreatheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheVC.swift; sourceTree = "<group>"; };
 		BEEE66442ADD3CCB0072B675 /* FireworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkVC.swift; sourceTree = "<group>"; };
+		BEEE66A82ADE7D8A0072B675 /* Position.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Position.storyboard; sourceTree = "<group>"; };
+		BEEE66AB2ADE7DAC0072B675 /* PositionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionVC.swift; sourceTree = "<group>"; };
 		C1EDFFC898EC154D2D1932C2 /* Pods-LBAnimateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAnimateExample.debug.xcconfig"; path = "Target Support Files/Pods-LBAnimateExample/Pods-LBAnimateExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E3DA8462AED03731C533CA4D /* Pods-LBAnimateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAnimateExample.release.xcconfig"; path = "Target Support Files/Pods-LBAnimateExample/Pods-LBAnimateExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,7 @@
 				BEEE662B2ADD3B740072B675 /* Press */,
 				BEEE662E2ADD3B8F0072B675 /* Balloon */,
 				BEEE66312ADD3BA60072B675 /* Breathe */,
+				BEEE66A52ADE7D710072B675 /* Position */,
 				BEEE66342ADD3BB70072B675 /* Firework */,
 			);
 			path = Storyboards;
@@ -120,6 +125,7 @@
 				BEEE663D2ADD3C890072B675 /* Press */,
 				BEEE663C2ADD3C820072B675 /* Balloon */,
 				BEEE663B2ADD3C7C0072B675 /* Breathe */,
+				BEEE66AA2ADE7D8E0072B675 /* Position */,
 				BEEE663A2ADD3C760072B675 /* Firework */,
 			);
 			path = ViewControllers;
@@ -213,6 +219,22 @@
 			path = Press;
 			sourceTree = "<group>";
 		};
+		BEEE66A52ADE7D710072B675 /* Position */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE66A82ADE7D8A0072B675 /* Position.storyboard */,
+			);
+			path = Position;
+			sourceTree = "<group>";
+		};
+		BEEE66AA2ADE7D8E0072B675 /* Position */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE66AB2ADE7DAC0072B675 /* PositionVC.swift */,
+			);
+			path = Position;
+			sourceTree = "<group>";
+		};
 		DA423388F52988E90973E041 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +311,7 @@
 				BEEE661D2ADD37910072B675 /* LaunchScreen.storyboard in Resources */,
 				BEEE661A2ADD37910072B675 /* Assets.xcassets in Resources */,
 				BEEE66182ADD37900072B675 /* Main.storyboard in Resources */,
+				BEEE66A92ADE7D8A0072B675 /* Position.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEE66412ADD3CAB0072B675 /* BalloonVC.swift in Sources */,
+				BEEE66AC2ADE7DAC0072B675 /* PositionVC.swift in Sources */,
 				BEEE66432ADD3CBC0072B675 /* BreatheVC.swift in Sources */,
 				BEEE66152ADD37900072B675 /* MainVC.swift in Sources */,
 				BEEE66112ADD37900072B675 /* AppDelegate.swift in Sources */,

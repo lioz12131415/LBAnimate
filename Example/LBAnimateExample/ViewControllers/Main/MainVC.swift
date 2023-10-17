@@ -15,6 +15,7 @@ class MainVC: UIViewController {
         "Press",
         "Breathe",
         "Balloon",
+        "Position",
         "Firework"
     ]
     
@@ -35,6 +36,7 @@ extension MainVC: UITableViewDelegate {
             case "Press":    PressVC.show(over: navigationController)
             case "Breathe":  BreatheVC.show(over: navigationController)
             case "Balloon":  BalloonVC.show(over: navigationController)
+            case "Position": PositionVC.show(over: navigationController)
             case "Firework": FireworkVC.show(over: navigationController)
         default:
             break

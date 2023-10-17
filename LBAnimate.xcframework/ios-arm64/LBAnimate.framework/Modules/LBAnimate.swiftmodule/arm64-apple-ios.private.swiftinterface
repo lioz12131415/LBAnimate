@@ -55,7 +55,7 @@ extension LBAnimate.UIView_LBAnimate.Press {
   @discardableResult
   public func beganPress(_ block: @escaping () -> Swift.Void) -> Self
 }
-@_hasMissingDesignatedInitializers public class LBAnimate_Objc_Foundation {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Foundation : LBAnimate.LBAnimate_Objc_Core {
   @discardableResult
   public func delay(_ newValue: CoreFoundation.CGFloat) -> Self
   @discardableResult
@@ -64,10 +64,42 @@ extension LBAnimate.UIView_LBAnimate.Press {
 }
 extension LBAnimate.UIView_LBAnimate {
   @_inheritsConvenienceInitializers public class Firework : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
-    public init(_ parent: LBAnimate.UIView_LBAnimate, _ target: UIKit.UIView? = nil)
+    public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
     override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
     public func attach(_ images: [UIKit.UIImage?])
     public func detach()
+    @objc deinit
+  }
+}
+extension LBAnimate.UIView_LBAnimate.Position {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Center : LBAnimate.LBAnimate_Objc_Core {
+    public var x: LBAnimate.UIView_LBAnimate.Position.X {
+      get
+    }
+    public var y: LBAnimate.UIView_LBAnimate.Position.Y {
+      get
+    }
+    @objc deinit
+  }
+}
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Position : LBAnimate.LBAnimate_Objc_Core {
+    public var minX: LBAnimate.UIView_LBAnimate.Position.X {
+      get
+    }
+    public var minY: LBAnimate.UIView_LBAnimate.Position.Y {
+      get
+    }
+    public var maxX: LBAnimate.UIView_LBAnimate.Position.X {
+      get
+    }
+    public var maxY: LBAnimate.UIView_LBAnimate.Position.Y {
+      get
+    }
+    public var center: LBAnimate.UIView_LBAnimate.Position.Center {
+      get
+      set
+    }
     @objc deinit
   }
 }
@@ -84,11 +116,21 @@ extension LBAnimate.UIView_LBAnimate {
     get
     set
   }
+  public var position: LBAnimate.UIView_LBAnimate.Position? {
+    get
+    set
+  }
   public var firework: LBAnimate.UIView_LBAnimate.Firework? {
     get
     set
   }
   @objc deinit
+}
+extension LBAnimate.UIView_LBAnimate.Position {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class X : LBAnimate.LBAnimate_Objc_Position_Axis_Style {
+    override public func change(to axisPoint: CoreFoundation.CGFloat, completion: (() -> Swift.Void)? = nil)
+    @objc deinit
+  }
 }
 extension LBAnimate.UIView_LBAnimate.Firework {
   @discardableResult
@@ -102,9 +144,30 @@ extension LBAnimate.UIView_LBAnimate.Firework {
   @discardableResult
   public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Position_Axis_Style : LBAnimate.LBAnimate_Objc_Bouncing_Style {
+  convenience public init(_ point: LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point, _ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
+  public func change(to axisPoint: CoreFoundation.CGFloat, completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+extension LBAnimate.LBAnimate_Objc_Position_Axis_Style {
+  public enum Point {
+    case none
+    case maxY
+    case maxX
+    case minY
+    case minX
+    case centerX
+    case centerY
+    public static func == (a: LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point, b: LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
 extension LBAnimate.UIView_LBAnimate {
   @_inheritsConvenienceInitializers public class Press : LBAnimate.LBAnimate_Objc_Long_Press_Gesture_Style {
-    public init(_ parent: LBAnimate.UIView_LBAnimate, _ target: UIKit.UIView? = nil)
+    public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
     override public func began(_ sender: UIKit.UILongPressGestureRecognizer)
     override public func ended(_ sender: UIKit.UILongPressGestureRecognizer)
     override public func cancelled(_ sender: UIKit.UILongPressGestureRecognizer)
@@ -137,6 +200,16 @@ extension LBAnimate.UIView_LBAnimate {
     @objc deinit
   }
 }
+@_hasMissingDesignatedInitializers public class LBAnimate_Objc_Core {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Bouncing_Style : LBAnimate.LBAnimate_Objc_Foundation {
+  @discardableResult
+  public func damping(_ newValue: CoreFoundation.CGFloat) -> Self
+  @discardableResult
+  public func velocity(_ newValue: CoreFoundation.CGFloat) -> Self
+  @objc deinit
+}
 extension LBAnimate.UIView_LBAnimate.Breathe {
   @discardableResult
   public func minScaleY(_ newValue: CoreFoundation.CGFloat) -> Self
@@ -153,9 +226,15 @@ extension LBAnimate.UIView_LBAnimate.Breathe {
   @discardableResult
   public func maxScaleX(_ newValue: CoreFoundation.CGFloat) -> Self
 }
+extension LBAnimate.UIView_LBAnimate.Position {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Y : LBAnimate.LBAnimate_Objc_Position_Axis_Style {
+    override public func change(to axisPoint: CoreFoundation.CGFloat, completion: (() -> Swift.Void)? = nil)
+    @objc deinit
+  }
+}
 extension LBAnimate.UIView_LBAnimate {
   @_inheritsConvenienceInitializers public class Breathe : LBAnimate.LBAnimate_Objc_Repeat_Style {
-    public init(_ parent: LBAnimate.UIView_LBAnimate, _ target: UIKit.UIView? = nil)
+    public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
     override public func stop()
     override public func start()
     @objc deinit
@@ -166,3 +245,5 @@ extension UIKit.UIView {
     get
   }
 }
+extension LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point : Swift.Equatable {}
+extension LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point : Swift.Hashable {}
