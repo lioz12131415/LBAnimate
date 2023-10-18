@@ -124,6 +124,10 @@ extension LBAnimate.UIView_LBAnimate {
     get
     set
   }
+  public var soapBubbles: LBAnimate.UIView_LBAnimate.SoapBubbles? {
+    get
+    set
+  }
   @objc deinit
 }
 extension LBAnimate.UIView_LBAnimate.Position {
@@ -185,6 +189,30 @@ extension LBAnimate.UIView_LBAnimate {
   open func didTapped(_ sender: UIKit.UILongPressGestureRecognizer)
   @objc deinit
 }
+extension LBAnimate.UIView_LBAnimate.SoapBubbles {
+  @discardableResult
+  public func count(_ newValue: Swift.Int) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.SoapBubbles {
+  @discardableResult
+  public func scale(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.SoapBubbles {
+  @discardableResult
+  public func velocity(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.SoapBubbles {
+  @discardableResult
+  public func didStop(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.SoapBubbles {
+  @discardableResult
+  public func didStart(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.SoapBubbles {
+  @discardableResult
+  public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Repeat_Style : LBAnimate.LBAnimate_Objc_Foundation {
   open func stop()
   open func start()
@@ -202,6 +230,15 @@ extension LBAnimate.UIView_LBAnimate {
 }
 @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Core {
   @objc deinit
+}
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers public class SoapBubbles : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
+    public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
+    override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
+    public func attach(_ image: UIKit.UIImage?)
+    public func detach()
+    @objc deinit
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Bouncing_Style : LBAnimate.LBAnimate_Objc_Foundation {
   @discardableResult

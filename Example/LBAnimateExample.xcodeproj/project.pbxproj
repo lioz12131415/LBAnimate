@@ -25,6 +25,8 @@
 		BEEE66452ADD3CCB0072B675 /* FireworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66442ADD3CCB0072B675 /* FireworkVC.swift */; };
 		BEEE66A92ADE7D8A0072B675 /* Position.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEE66A82ADE7D8A0072B675 /* Position.storyboard */; };
 		BEEE66AC2ADE7DAC0072B675 /* PositionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66AB2ADE7DAC0072B675 /* PositionVC.swift */; };
+		BEEE66C62ADFCC2F0072B675 /* SoapBubbles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEE66C52ADFCC2F0072B675 /* SoapBubbles.storyboard */; };
+		BEEE66C82ADFCC370072B675 /* SoapBubblesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE66C72ADFCC370072B675 /* SoapBubblesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		BEEE66442ADD3CCB0072B675 /* FireworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkVC.swift; sourceTree = "<group>"; };
 		BEEE66A82ADE7D8A0072B675 /* Position.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Position.storyboard; sourceTree = "<group>"; };
 		BEEE66AB2ADE7DAC0072B675 /* PositionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionVC.swift; sourceTree = "<group>"; };
+		BEEE66C52ADFCC2F0072B675 /* SoapBubbles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SoapBubbles.storyboard; sourceTree = "<group>"; };
+		BEEE66C72ADFCC370072B675 /* SoapBubblesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoapBubblesVC.swift; sourceTree = "<group>"; };
 		C1EDFFC898EC154D2D1932C2 /* Pods-LBAnimateExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAnimateExample.debug.xcconfig"; path = "Target Support Files/Pods-LBAnimateExample/Pods-LBAnimateExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E3DA8462AED03731C533CA4D /* Pods-LBAnimateExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAnimateExample.release.xcconfig"; path = "Target Support Files/Pods-LBAnimateExample/Pods-LBAnimateExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +118,7 @@
 				BEEE66312ADD3BA60072B675 /* Breathe */,
 				BEEE66A52ADE7D710072B675 /* Position */,
 				BEEE66342ADD3BB70072B675 /* Firework */,
+				BEEE66C42ADFCC230072B675 /* SoapBubbles */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				BEEE663B2ADD3C7C0072B675 /* Breathe */,
 				BEEE66AA2ADE7D8E0072B675 /* Position */,
 				BEEE663A2ADD3C760072B675 /* Firework */,
+				BEEE66C32ADFCC1D0072B675 /* SoapBubbles */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -235,6 +241,22 @@
 			path = Position;
 			sourceTree = "<group>";
 		};
+		BEEE66C32ADFCC1D0072B675 /* SoapBubbles */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE66C72ADFCC370072B675 /* SoapBubblesVC.swift */,
+			);
+			path = SoapBubbles;
+			sourceTree = "<group>";
+		};
+		BEEE66C42ADFCC230072B675 /* SoapBubbles */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE66C52ADFCC2F0072B675 /* SoapBubbles.storyboard */,
+			);
+			path = SoapBubbles;
+			sourceTree = "<group>";
+		};
 		DA423388F52988E90973E041 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEE66C62ADFCC2F0072B675 /* SoapBubbles.storyboard in Resources */,
 				BEEE662D2ADD3B860072B675 /* Press.storyboard in Resources */,
 				BEEE66302ADD3B970072B675 /* Balloon.storyboard in Resources */,
 				BEEE66332ADD3BAF0072B675 /* Breathe.storyboard in Resources */,
@@ -365,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEE66412ADD3CAB0072B675 /* BalloonVC.swift in Sources */,
+				BEEE66C82ADFCC370072B675 /* SoapBubblesVC.swift in Sources */,
 				BEEE66AC2ADE7DAC0072B675 /* PositionVC.swift in Sources */,
 				BEEE66432ADD3CBC0072B675 /* BreatheVC.swift in Sources */,
 				BEEE66152ADD37900072B675 /* MainVC.swift in Sources */,

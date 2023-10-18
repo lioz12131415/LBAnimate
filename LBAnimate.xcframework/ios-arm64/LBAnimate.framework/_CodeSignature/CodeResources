@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		kKi4Qvs6JtkeJcQYJaIaZDtAHpQ=
+		pvy2qi3KirNcZ5t8b8D7l0bdVtU=
 		</data>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		4LhitAGYPtNT+36cwFQI6K7JHgQ=
+		lECj7xPB2VrQ1wgkP72VQECuXbc=
 		</data>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4LhitAGYPtNT+36cwFQI6K7JHgQ=
+		lECj7xPB2VrQ1wgkP72VQECuXbc=
 		</data>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		me5SdUeGCcAVtbaOnCckxqsPgVQ=
+		1vgc4cbuhacW1qnAsvU315hvTIA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bwrQZl8kgOnk5VjqNQeho/kAFt/2p4SAurbJWXukUK0=
+			YxCiNeRj8GiBxCldvpUq7AOeTn5IQKP+Ed8tw0pPzO4=
 			</data>
 		</dict>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yEXkkoV+6YTIbuXMPa2uTlNj+h5ogzuqOf1vFM4IvSg=
+			kdNn5N1vqF6Vv42ZHW3ZaB+ton667sTHF9+2xpFwdRI=
 			</data>
 		</dict>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yEXkkoV+6YTIbuXMPa2uTlNj+h5ogzuqOf1vFM4IvSg=
+			kdNn5N1vqF6Vv42ZHW3ZaB+ton667sTHF9+2xpFwdRI=
 			</data>
 		</dict>
 		<key>Modules/LBAnimate.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b3BohFd3q8OXGvhDZaLD8ff6MsfsAo11fG6y5lLBEIc=
+			3btSZcM9dJlT5IvR0tZCR1Y/EopMz6xWTDUzx8mCaaM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

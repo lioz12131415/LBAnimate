@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Soap BubblesVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SoapBubblesVC" id="Y6W-OH-hqX" customClass="SoapBubblesVC" customModule="LBAnimate3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuY-BH-PAb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEi-St-nKR">
+                                        <rect key="frame" x="16" y="412.33333333333331" width="361" height="27.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="pEi-St-nKR" firstAttribute="centerX" secondItem="tuY-BH-PAb" secondAttribute="centerX" id="JIq-K0-lOO"/>
+                                    <constraint firstAttribute="trailing" secondItem="pEi-St-nKR" secondAttribute="trailing" constant="16" id="Oqn-bK-oAG"/>
+                                    <constraint firstItem="pEi-St-nKR" firstAttribute="centerY" secondItem="tuY-BH-PAb" secondAttribute="centerY" id="nQY-Vu-gTa"/>
+                                    <constraint firstItem="pEi-St-nKR" firstAttribute="leading" secondItem="tuY-BH-PAb" secondAttribute="leading" constant="16" id="vJp-A2-lsr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tuY-BH-PAb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="0ee-Io-liE"/>
+                            <constraint firstAttribute="bottom" secondItem="tuY-BH-PAb" secondAttribute="bottom" id="Uk2-zd-AzI"/>
+                            <constraint firstAttribute="trailing" secondItem="tuY-BH-PAb" secondAttribute="trailing" id="dw5-gG-L86"/>
+                            <constraint firstItem="tuY-BH-PAb" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="izj-Vz-4YI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animation_view" destination="tuY-BH-PAb" id="bim-PS-a8d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="4"/>
         </scene>
     </scenes>
     <resources>

@@ -321,6 +321,23 @@
         "moduleName": "LBAnimate"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LBAnimate_Objc_Foundation",
         "printedName": "LBAnimate_Objc_Foundation",
@@ -1021,6 +1038,114 @@
                 "declKind": "Accessor",
                 "usr": "s:9LBAnimate07UIView_A0C8fireworkAC8FireworkCSgvM",
                 "mangledName": "$s9LBAnimate07UIView_A0C8fireworkAC8FireworkCSgvM",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "soapBubbles",
+            "printedName": "soapBubbles",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SoapBubbles",
+                    "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles",
+                    "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvp",
+            "mangledName": "$s9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvp",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SoapBubbles",
+                        "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles",
+                        "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvg",
+                "mangledName": "$s9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvg",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SoapBubbles",
+                        "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles",
+                        "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvs",
+                "mangledName": "$s9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvs",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvM",
+                "mangledName": "$s9LBAnimate07UIView_A0C11soapBubblesAC04SoapD0CSgvM",
                 "moduleName": "LBAnimate",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -2474,6 +2599,373 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "SoapBubbles",
+            "printedName": "SoapBubbles",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SoapBubbles",
+                    "printedName": "LBAnimate.UIView_LBAnimate.SoapBubbles",
+                    "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView_LBAnimate",
+                        "printedName": "LBAnimate.UIView_LBAnimate",
+                        "usr": "s:9LBAnimate07UIView_A0C"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesCyAeCSg_So0B0CSgtcfc",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesCyAeCSg_So0B0CSgtcfc",
+                "moduleName": "LBAnimate",
+                "overriding": true,
+                "declAttributes": [
+                  "Override",
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "didTapped",
+                "printedName": "didTapped(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITapGestureRecognizer",
+                    "printedName": "UIKit.UITapGestureRecognizer",
+                    "usr": "c:objc(cs)UITapGestureRecognizer"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC9didTappedyySo22UITapGestureRecognizerCF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC9didTappedyySo22UITapGestureRecognizerCF",
+                "moduleName": "LBAnimate",
+                "overriding": true,
+                "declAttributes": [
+                  "Override",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "attach",
+                "printedName": "attach(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC6attachyySo7UIImageCSgF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC6attachyySo7UIImageCSgF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "detach",
+                "printedName": "detach()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC6detachyyF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC6detachyyF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "count",
+                "printedName": "count(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC5countyAEXDSiF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC5countyAEXDSiF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "scale",
+                "printedName": "scale(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC5scaleyAEXD14CoreFoundation7CGFloatVF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC5scaleyAEXD12CoreGraphics7CGFloatVF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "velocity",
+                "printedName": "velocity(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC8velocityyAEXD14CoreFoundation7CGFloatVF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC8velocityyAEXD12CoreGraphics7CGFloatVF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "didStop",
+                "printedName": "didStop(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC7didStopyAEXDyycF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC7didStopyAEXDyycF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "didStart",
+                "printedName": "didStart(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC8didStartyAEXDyycF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC8didStartyAEXDyycF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "didTouch",
+                "printedName": "didTouch(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC8didTouchyAEXDyycF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC8didTouchyAEXDyycF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC",
+            "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "s:9LBAnimate0A23_Objc_Tap_Gesture_StyleC",
+            "inheritsConvenienceInitializers": true,
+            "superclassNames": [
+              "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
+              "LBAnimate.LBAnimate_Objc_Foundation",
+              "LBAnimate.LBAnimate_Objc_Core"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "Breathe",
             "printedName": "Breathe",
             "children": [
@@ -3528,6 +4020,23 @@
         "moduleName": "LBAnimate"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LBAnimate_Objc_Repeat_Style",
         "printedName": "LBAnimate_Objc_Repeat_Style",
@@ -3672,6 +4181,23 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
       },
       {
         "kind": "Import",
@@ -4028,6 +4554,62 @@
       "offset": 1528,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 1920,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1997,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2040,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3304,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3308,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 3566,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3654,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 3662,
+      "length": 3,
+      "value": "0.1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/UIView_LBAnimate.Animations.Breathe.swift",
@@ -4504,6 +5086,48 @@
       "offset": 3101,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 434,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 539,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 592,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 954,
+      "length": 4,
+      "value": "0.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 987,
+      "length": 4,
+      "value": "0.50"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "FloatLiteral",
+      "offset": 1020,
+      "length": 4,
+      "value": "2.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/BouncingStyle\/LBAnimate_Objc_Bouncing_Style.swift",

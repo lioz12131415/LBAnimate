@@ -16,7 +16,8 @@ class MainVC: UIViewController {
         "Breathe",
         "Balloon",
         "Position",
-        "Firework"
+        "Firework",
+        "SoapBubbles"
     ]
     
     override func viewDidLoad() {
@@ -33,11 +34,12 @@ extension MainVC: UITableViewDelegate {
     // ==================================================== //
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch array[indexPath.row] {
-            case "Press":    PressVC.show(over: navigationController)
-            case "Breathe":  BreatheVC.show(over: navigationController)
-            case "Balloon":  BalloonVC.show(over: navigationController)
-            case "Position": PositionVC.show(over: navigationController)
-            case "Firework": FireworkVC.show(over: navigationController)
+            case "Press":       PressVC.show(over: navigationController)
+            case "Breathe":     BreatheVC.show(over: navigationController)
+            case "Balloon":     BalloonVC.show(over: navigationController)
+            case "Position":    PositionVC.show(over: navigationController)
+            case "Firework":    FireworkVC.show(over: navigationController)
+            case "SoapBubbles": SoapBubblesVC.show(over: navigationController)
         default:
             break
         }
