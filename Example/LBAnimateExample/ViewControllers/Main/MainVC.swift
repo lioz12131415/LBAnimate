@@ -16,6 +16,7 @@ class MainVC: UIViewController {
         "Breathe",
         "Balloon",
         "Position",
+        "Balloons",
         "Firework",
         "SoapBubbles"
     ]
@@ -38,6 +39,7 @@ extension MainVC: UITableViewDelegate {
             case "Breathe":     BreatheVC.show(over: navigationController)
             case "Balloon":     BalloonVC.show(over: navigationController)
             case "Position":    PositionVC.show(over: navigationController)
+            case "Balloons":    BalloonsVC.show(over: navigationController)
             case "Firework":    FireworkVC.show(over: navigationController)
             case "SoapBubbles": SoapBubblesVC.show(over: navigationController)
         default:

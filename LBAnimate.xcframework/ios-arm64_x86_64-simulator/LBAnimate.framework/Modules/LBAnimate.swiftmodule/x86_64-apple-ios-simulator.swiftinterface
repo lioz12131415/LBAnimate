@@ -29,6 +29,15 @@ extension LBAnimate.UIView_LBAnimate.Balloon {
   @discardableResult
   public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
 }
+extension LBAnimate.UIView_LBAnimate {
+  @_inheritsConvenienceInitializers public class Balloons : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style, LBAnimate.LBDelayProtocol {
+    public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
+    override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
+    public func attach(_ image: UIKit.UIImage?)
+    public func detach()
+    @objc deinit
+  }
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Tap_Gesture_Style : LBAnimate.LBAnimate_Objc_Foundation {
   open func add()
   open func remove()
@@ -38,6 +47,12 @@ extension LBAnimate.UIView_LBAnimate.Balloon {
   @discardableResult
   public func requireToFail(_ newValue: UIKit.UIGestureRecognizer) -> Self
   @objc deinit
+}
+public protocol LBDelayProtocol : LBAnimate.LBAnimate_Objc_Foundation {
+}
+extension LBAnimate.LBDelayProtocol {
+  @discardableResult
+  public func delay(_ newValue: CoreFoundation.CGFloat) -> Self
 }
 extension LBAnimate.UIView_LBAnimate.Press {
   @discardableResult
@@ -55,15 +70,51 @@ extension LBAnimate.UIView_LBAnimate.Press {
   @discardableResult
   public func beganPress(_ block: @escaping () -> Swift.Void) -> Self
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Foundation : LBAnimate.LBAnimate_Objc_Core {
+public protocol LBDampingProtocol : LBAnimate.LBAnimate_Objc_Foundation {
+}
+extension LBAnimate.LBDampingProtocol {
   @discardableResult
-  public func delay(_ newValue: CoreFoundation.CGFloat) -> Self
+  public func damping(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+public protocol LBRepeatProtocol : LBAnimate.LBAnimate_Objc_Foundation {
+}
+extension LBAnimate.LBRepeatProtocol {
   @discardableResult
-  public func duration(_ newValue: CoreFoundation.CGFloat) -> Self
+  public func repeatCount(_ newValue: Swift.Int?) -> Self
+}
+@_hasMissingDesignatedInitializers public class LBAnimate_Objc_Foundation {
   @objc deinit
 }
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func numberOfBalloons(_ newValue: Swift.Int) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func minScale(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func maxScale(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func velocity(_ newValue: CoreFoundation.CGFloat) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func didStop(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func didStart(_ block: @escaping () -> Swift.Void) -> Self
+}
+extension LBAnimate.UIView_LBAnimate.Balloons {
+  @discardableResult
+  public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
+}
 extension LBAnimate.UIView_LBAnimate {
-  @_inheritsConvenienceInitializers public class Firework : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
+  @_inheritsConvenienceInitializers public class Firework : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style, LBAnimate.LBDelayProtocol, LBAnimate.LBDurationProtocol {
     public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
     override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
     public func attach(_ images: [UIKit.UIImage?])
@@ -72,7 +123,7 @@ extension LBAnimate.UIView_LBAnimate {
   }
 }
 extension LBAnimate.UIView_LBAnimate.Position {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Center : LBAnimate.LBAnimate_Objc_Core {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Center : LBAnimate.LBAnimate_Objc_Foundation {
     public var x: LBAnimate.UIView_LBAnimate.Position.X {
       get
     }
@@ -82,8 +133,14 @@ extension LBAnimate.UIView_LBAnimate.Position {
     @objc deinit
   }
 }
+public protocol LBVelocityProtocol : LBAnimate.LBAnimate_Objc_Foundation {
+}
+extension LBAnimate.LBVelocityProtocol {
+  @discardableResult
+  public func velocity(_ newValue: CoreFoundation.CGFloat) -> Self
+}
 extension LBAnimate.UIView_LBAnimate {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Position : LBAnimate.LBAnimate_Objc_Core {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Position : LBAnimate.LBAnimate_Objc_Foundation {
     public var minX: LBAnimate.UIView_LBAnimate.Position.X {
       get
     }
@@ -120,6 +177,10 @@ extension LBAnimate.UIView_LBAnimate {
     get
     set
   }
+  public var balloons: LBAnimate.UIView_LBAnimate.Balloons? {
+    get
+    set
+  }
   public var firework: LBAnimate.UIView_LBAnimate.Firework? {
     get
     set
@@ -148,7 +209,7 @@ extension LBAnimate.UIView_LBAnimate.Firework {
   @discardableResult
   public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Position_Axis_Style : LBAnimate.LBAnimate_Objc_Bouncing_Style {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Position_Axis_Style : LBAnimate.LBAnimate_Objc_Foundation, LBAnimate.LBDelayProtocol, LBAnimate.LBDampingProtocol, LBAnimate.LBDurationProtocol, LBAnimate.LBVelocityProtocol {
   convenience public init(_ point: LBAnimate.LBAnimate_Objc_Position_Axis_Style.Point, _ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
   public func change(to axisPoint: CoreFoundation.CGFloat, completion: (() -> Swift.Void)? = nil)
   @objc deinit
@@ -170,7 +231,7 @@ extension LBAnimate.LBAnimate_Objc_Position_Axis_Style {
   }
 }
 extension LBAnimate.UIView_LBAnimate {
-  @_inheritsConvenienceInitializers public class Press : LBAnimate.LBAnimate_Objc_Long_Press_Gesture_Style {
+  @_inheritsConvenienceInitializers public class Press : LBAnimate.LBAnimate_Objc_Long_Press_Gesture_Style, LBAnimate.LBDelayProtocol, LBAnimate.LBDurationProtocol {
     public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
     override public func began(_ sender: UIKit.UILongPressGestureRecognizer)
     override public func ended(_ sender: UIKit.UILongPressGestureRecognizer)
@@ -189,9 +250,15 @@ extension LBAnimate.UIView_LBAnimate {
   open func didTapped(_ sender: UIKit.UILongPressGestureRecognizer)
   @objc deinit
 }
+public protocol LBDurationProtocol : LBAnimate.LBAnimate_Objc_Foundation {
+}
+extension LBAnimate.LBDurationProtocol {
+  @discardableResult
+  public func duration(_ newValue: CoreFoundation.CGFloat) -> Self
+}
 extension LBAnimate.UIView_LBAnimate.SoapBubbles {
   @discardableResult
-  public func count(_ newValue: Swift.Int) -> Self
+  public func numberOfBubbles(_ newValue: Swift.Int) -> Self
 }
 extension LBAnimate.UIView_LBAnimate.SoapBubbles {
   @discardableResult
@@ -213,39 +280,22 @@ extension LBAnimate.UIView_LBAnimate.SoapBubbles {
   @discardableResult
   public func didTouch(_ block: @escaping () -> Swift.Void) -> Self
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Repeat_Style : LBAnimate.LBAnimate_Objc_Foundation {
-  open func stop()
-  open func start()
-  @discardableResult
-  public func repeatCount(_ newValue: Swift.Int?) -> Self
-  @objc deinit
-}
 extension LBAnimate.UIView_LBAnimate {
-  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Balloon : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Balloon : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style, LBAnimate.LBDelayProtocol, LBAnimate.LBDurationProtocol {
     override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
     public func attach(_ image: UIKit.UIImage?)
     public func detach()
     @objc deinit
   }
 }
-@_hasMissingDesignatedInitializers public class LBAnimate_Objc_Core {
-  @objc deinit
-}
 extension LBAnimate.UIView_LBAnimate {
-  @_inheritsConvenienceInitializers public class SoapBubbles : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style {
+  @_inheritsConvenienceInitializers public class SoapBubbles : LBAnimate.LBAnimate_Objc_Tap_Gesture_Style, LBAnimate.LBDelayProtocol, LBAnimate.LBDurationProtocol {
     public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
     override public func didTapped(_ sender: UIKit.UITapGestureRecognizer)
     public func attach(_ image: UIKit.UIImage?)
     public func detach()
     @objc deinit
   }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LBAnimate_Objc_Bouncing_Style : LBAnimate.LBAnimate_Objc_Foundation {
-  @discardableResult
-  public func damping(_ newValue: CoreFoundation.CGFloat) -> Self
-  @discardableResult
-  public func velocity(_ newValue: CoreFoundation.CGFloat) -> Self
-  @objc deinit
 }
 extension LBAnimate.UIView_LBAnimate.Breathe {
   @discardableResult
@@ -270,10 +320,10 @@ extension LBAnimate.UIView_LBAnimate.Position {
   }
 }
 extension LBAnimate.UIView_LBAnimate {
-  @_inheritsConvenienceInitializers public class Breathe : LBAnimate.LBAnimate_Objc_Repeat_Style {
+  @_inheritsConvenienceInitializers public class Breathe : LBAnimate.LBAnimate_Objc_Foundation, LBAnimate.LBRepeatProtocol, LBAnimate.LBDelayProtocol, LBAnimate.LBDurationProtocol {
     public init(_ parent: LBAnimate.UIView_LBAnimate?, _ target: UIKit.UIView? = nil)
-    override public func stop()
-    override public func start()
+    public func stop()
+    public func start()
     @objc deinit
   }
 }

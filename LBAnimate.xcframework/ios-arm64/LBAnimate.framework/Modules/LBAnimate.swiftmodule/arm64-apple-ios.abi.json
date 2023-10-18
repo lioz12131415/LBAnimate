@@ -56,6 +56,40 @@
         "moduleName": "LBAnimate"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LBAnimate_Objc_Tap_Gesture_Style",
         "printedName": "LBAnimate_Objc_Tap_Gesture_Style",
@@ -197,8 +231,72 @@
         "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation",
-          "LBAnimate.LBAnimate_Objc_Core"
+          "LBAnimate.LBAnimate_Objc_Foundation"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBDelayProtocol",
+        "printedName": "LBDelayProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "delay",
+            "printedName": "delay(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9LBAnimate15LBDelayProtocolPAAE5delayyx14CoreFoundation7CGFloatVF",
+            "mangledName": "$s9LBAnimate15LBDelayProtocolPAAE5delayyx12CoreGraphics7CGFloatVF",
+            "moduleName": "LBAnimate",
+            "genericSig": "<τ_0_0 where τ_0_0 : LBAnimate.LBDelayProtocol>",
+            "sugared_genericSig": "<Self where Self : LBAnimate.LBDelayProtocol>",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9LBAnimate15LBDelayProtocolP",
+        "mangledName": "$s9LBAnimate15LBDelayProtocolP",
+        "moduleName": "LBAnimate",
+        "genericSig": "<τ_0_0 : LBAnimate.LBAnimate_Objc_Foundation>",
+        "sugared_genericSig": "<Self : LBAnimate.LBAnimate_Objc_Foundation>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -339,18 +437,18 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "LBAnimate_Objc_Foundation",
-        "printedName": "LBAnimate_Objc_Foundation",
+        "name": "LBDampingProtocol",
+        "printedName": "LBDampingProtocol",
         "children": [
           {
             "kind": "Function",
-            "name": "delay",
-            "printedName": "delay(_:)",
+            "name": "damping",
+            "printedName": "damping(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
               },
               {
                 "kind": "TypeNominal",
@@ -360,45 +458,176 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9LBAnimate0A16_Objc_FoundationC5delayyACXD04CoreC07CGFloatVF",
-            "mangledName": "$s9LBAnimate0A16_Objc_FoundationC5delayyACXD12CoreGraphics7CGFloatVF",
+            "usr": "s:9LBAnimate17LBDampingProtocolPAAE7dampingyx14CoreFoundation7CGFloatVF",
+            "mangledName": "$s9LBAnimate17LBDampingProtocolPAAE7dampingyx12CoreGraphics7CGFloatVF",
             "moduleName": "LBAnimate",
+            "genericSig": "<τ_0_0 where τ_0_0 : LBAnimate.LBDampingProtocol>",
+            "sugared_genericSig": "<Self where Self : LBAnimate.LBDampingProtocol>",
             "declAttributes": [
               "AccessControl",
               "DiscardableResult",
               "RawDocComment"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "duration",
-            "printedName": "duration(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9LBAnimate0A16_Objc_FoundationC8durationyACXD04CoreC07CGFloatVF",
-            "mangledName": "$s9LBAnimate0A16_Objc_FoundationC8durationyACXD12CoreGraphics7CGFloatVF",
-            "moduleName": "LBAnimate",
-            "declAttributes": [
-              "AccessControl",
-              "DiscardableResult",
-              "RawDocComment"
-            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
+        "declKind": "Protocol",
+        "usr": "s:9LBAnimate17LBDampingProtocolP",
+        "mangledName": "$s9LBAnimate17LBDampingProtocolP",
+        "moduleName": "LBAnimate",
+        "genericSig": "<τ_0_0 : LBAnimate.LBAnimate_Objc_Foundation>",
+        "sugared_genericSig": "<Self : LBAnimate.LBAnimate_Objc_Foundation>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBRepeatProtocol",
+        "printedName": "LBRepeatProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "repeatCount",
+            "printedName": "repeatCount(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9LBAnimate16LBRepeatProtocolPAAE11repeatCountyxSiSgF",
+            "mangledName": "$s9LBAnimate16LBRepeatProtocolPAAE11repeatCountyxSiSgF",
+            "moduleName": "LBAnimate",
+            "genericSig": "<τ_0_0 where τ_0_0 : LBAnimate.LBRepeatProtocol>",
+            "sugared_genericSig": "<Self where Self : LBAnimate.LBRepeatProtocol>",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9LBAnimate16LBRepeatProtocolP",
+        "mangledName": "$s9LBAnimate16LBRepeatProtocolP",
+        "moduleName": "LBAnimate",
+        "genericSig": "<τ_0_0 : LBAnimate.LBAnimate_Objc_Foundation>",
+        "sugared_genericSig": "<Self : LBAnimate.LBAnimate_Objc_Foundation>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBAnimate_Objc_Foundation",
+        "printedName": "LBAnimate_Objc_Foundation",
         "declKind": "Class",
         "usr": "s:9LBAnimate0A16_Objc_FoundationC",
         "mangledName": "$s9LBAnimate0A16_Objc_FoundationC",
@@ -406,12 +635,7 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "superclassUsr": "s:9LBAnimate0A10_Objc_CoreC",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Core"
-        ]
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -446,6 +670,105 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LBVelocityProtocol",
+        "printedName": "LBVelocityProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "velocity",
+            "printedName": "velocity(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9LBAnimate18LBVelocityProtocolPAAE8velocityyx14CoreFoundation7CGFloatVF",
+            "mangledName": "$s9LBAnimate18LBVelocityProtocolPAAE8velocityyx12CoreGraphics7CGFloatVF",
+            "moduleName": "LBAnimate",
+            "genericSig": "<τ_0_0 where τ_0_0 : LBAnimate.LBVelocityProtocol>",
+            "sugared_genericSig": "<Self where Self : LBAnimate.LBVelocityProtocol>",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9LBAnimate18LBVelocityProtocolP",
+        "mangledName": "$s9LBAnimate18LBVelocityProtocolP",
+        "moduleName": "LBAnimate",
+        "genericSig": "<τ_0_0 : LBAnimate.LBAnimate_Objc_Foundation>",
+        "sugared_genericSig": "<Self : LBAnimate.LBAnimate_Objc_Foundation>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -938,6 +1261,114 @@
           },
           {
             "kind": "Var",
+            "name": "balloons",
+            "printedName": "balloons",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LBAnimate.UIView_LBAnimate.Balloons?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Balloons",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Balloons",
+                    "usr": "s:9LBAnimate07UIView_A0C8BalloonsC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvp",
+            "mangledName": "$s9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvp",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Balloons?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Balloons",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Balloons",
+                        "usr": "s:9LBAnimate07UIView_A0C8BalloonsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvg",
+                "mangledName": "$s9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvg",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Balloons?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Balloons",
+                        "printedName": "LBAnimate.UIView_LBAnimate.Balloons",
+                        "usr": "s:9LBAnimate07UIView_A0C8BalloonsC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvs",
+                "mangledName": "$s9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvs",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvM",
+                "mangledName": "$s9LBAnimate07UIView_A0C8balloonsAC8BalloonsCSgvM",
+                "moduleName": "LBAnimate",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "firework",
             "printedName": "firework",
             "children": [
@@ -1149,6 +1580,410 @@
                 "moduleName": "LBAnimate",
                 "implicit": true,
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Balloons",
+            "printedName": "Balloons",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Balloons",
+                    "printedName": "LBAnimate.UIView_LBAnimate.Balloons",
+                    "usr": "s:9LBAnimate07UIView_A0C8BalloonsC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LBAnimate.UIView_LBAnimate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView_LBAnimate",
+                        "printedName": "LBAnimate.UIView_LBAnimate",
+                        "usr": "s:9LBAnimate07UIView_A0C"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsCyAeCSg_So0B0CSgtcfc",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsCyAeCSg_So0B0CSgtcfc",
+                "moduleName": "LBAnimate",
+                "overriding": true,
+                "declAttributes": [
+                  "Override",
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "didTapped",
+                "printedName": "didTapped(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITapGestureRecognizer",
+                    "printedName": "UIKit.UITapGestureRecognizer",
+                    "usr": "c:objc(cs)UITapGestureRecognizer"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC9didTappedyySo22UITapGestureRecognizerCF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC9didTappedyySo22UITapGestureRecognizerCF",
+                "moduleName": "LBAnimate",
+                "overriding": true,
+                "declAttributes": [
+                  "Override",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "attach",
+                "printedName": "attach(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC6attachyySo7UIImageCSgF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC6attachyySo7UIImageCSgF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "detach",
+                "printedName": "detach()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC6detachyyF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC6detachyyF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "numberOfBalloons",
+                "printedName": "numberOfBalloons(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC08numberOfC0yAEXDSiF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC08numberOfC0yAEXDSiF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "minScale",
+                "printedName": "minScale(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC8minScaleyAEXD14CoreFoundation7CGFloatVF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC8minScaleyAEXD12CoreGraphics7CGFloatVF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "maxScale",
+                "printedName": "maxScale(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC8maxScaleyAEXD14CoreFoundation7CGFloatVF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC8maxScaleyAEXD12CoreGraphics7CGFloatVF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "velocity",
+                "printedName": "velocity(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC8velocityyAEXD14CoreFoundation7CGFloatVF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC8velocityyAEXD12CoreGraphics7CGFloatVF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "didStop",
+                "printedName": "didStop(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC7didStopyAEXDyycF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC7didStopyAEXDyycF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "didStart",
+                "printedName": "didStart(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC8didStartyAEXDyycF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC8didStartyAEXDyycF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "didTouch",
+                "printedName": "didTouch(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicSelf",
+                    "printedName": "Self"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9LBAnimate07UIView_A0C8BalloonsC8didTouchyAEXDyycF",
+                "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC8didTouchyAEXDyycF",
+                "moduleName": "LBAnimate",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult",
+                  "RawDocComment"
+                ],
+                "isFromExtension": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:9LBAnimate07UIView_A0C8BalloonsC",
+            "mangledName": "$s9LBAnimate07UIView_A0C8BalloonsC",
+            "moduleName": "LBAnimate",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "superclassUsr": "s:9LBAnimate0A23_Objc_Tap_Gesture_StyleC",
+            "inheritsConvenienceInitializers": true,
+            "superclassNames": [
+              "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
+              "LBAnimate.LBAnimate_Objc_Foundation"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "LBDelayProtocol",
+                "printedName": "LBDelayProtocol",
+                "usr": "s:9LBAnimate15LBDelayProtocolP",
+                "mangledName": "$s9LBAnimate15LBDelayProtocolP"
               }
             ]
           },
@@ -1436,8 +2271,23 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation",
-              "LBAnimate.LBAnimate_Objc_Core"
+              "LBAnimate.LBAnimate_Objc_Foundation"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "LBDelayProtocol",
+                "printedName": "LBDelayProtocol",
+                "usr": "s:9LBAnimate15LBDelayProtocolP",
+                "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LBDurationProtocol",
+                "printedName": "LBDurationProtocol",
+                "usr": "s:9LBAnimate18LBDurationProtocolP",
+                "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+              }
             ]
           },
           {
@@ -1764,9 +2614,37 @@
                 "inheritsConvenienceInitializers": true,
                 "superclassNames": [
                   "LBAnimate.LBAnimate_Objc_Position_Axis_Style",
-                  "LBAnimate.LBAnimate_Objc_Bouncing_Style",
-                  "LBAnimate.LBAnimate_Objc_Foundation",
-                  "LBAnimate.LBAnimate_Objc_Core"
+                  "LBAnimate.LBAnimate_Objc_Foundation"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "LBDelayProtocol",
+                    "printedName": "LBDelayProtocol",
+                    "usr": "s:9LBAnimate15LBDelayProtocolP",
+                    "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "LBDampingProtocol",
+                    "printedName": "LBDampingProtocol",
+                    "usr": "s:9LBAnimate17LBDampingProtocolP",
+                    "mangledName": "$s9LBAnimate17LBDampingProtocolP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "LBDurationProtocol",
+                    "printedName": "LBDurationProtocol",
+                    "usr": "s:9LBAnimate18LBDurationProtocolP",
+                    "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "LBVelocityProtocol",
+                    "printedName": "LBVelocityProtocol",
+                    "usr": "s:9LBAnimate18LBVelocityProtocolP",
+                    "mangledName": "$s9LBAnimate18LBVelocityProtocolP"
+                  }
                 ]
               },
               {
@@ -1844,9 +2722,37 @@
                 "inheritsConvenienceInitializers": true,
                 "superclassNames": [
                   "LBAnimate.LBAnimate_Objc_Position_Axis_Style",
-                  "LBAnimate.LBAnimate_Objc_Bouncing_Style",
-                  "LBAnimate.LBAnimate_Objc_Foundation",
-                  "LBAnimate.LBAnimate_Objc_Core"
+                  "LBAnimate.LBAnimate_Objc_Foundation"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "LBDelayProtocol",
+                    "printedName": "LBDelayProtocol",
+                    "usr": "s:9LBAnimate15LBDelayProtocolP",
+                    "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "LBDampingProtocol",
+                    "printedName": "LBDampingProtocol",
+                    "usr": "s:9LBAnimate17LBDampingProtocolP",
+                    "mangledName": "$s9LBAnimate17LBDampingProtocolP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "LBDurationProtocol",
+                    "printedName": "LBDurationProtocol",
+                    "usr": "s:9LBAnimate18LBDurationProtocolP",
+                    "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "LBVelocityProtocol",
+                    "printedName": "LBVelocityProtocol",
+                    "usr": "s:9LBAnimate18LBVelocityProtocolP",
+                    "mangledName": "$s9LBAnimate18LBVelocityProtocolP"
+                  }
                 ]
               },
               {
@@ -1944,11 +2850,11 @@
                   "RawDocComment"
                 ],
                 "isFromExtension": true,
-                "superclassUsr": "s:9LBAnimate0A10_Objc_CoreC",
+                "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
                 "hasMissingDesignatedInitializers": true,
                 "inheritsConvenienceInitializers": true,
                 "superclassNames": [
-                  "LBAnimate.LBAnimate_Objc_Core"
+                  "LBAnimate.LBAnimate_Objc_Foundation"
                 ]
               }
             ],
@@ -1961,11 +2867,11 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "superclassUsr": "s:9LBAnimate0A10_Objc_CoreC",
+            "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
             "hasMissingDesignatedInitializers": true,
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
-              "LBAnimate.LBAnimate_Objc_Core"
+              "LBAnimate.LBAnimate_Objc_Foundation"
             ]
           },
           {
@@ -2306,8 +3212,23 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Long_Press_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation",
-              "LBAnimate.LBAnimate_Objc_Core"
+              "LBAnimate.LBAnimate_Objc_Foundation"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "LBDelayProtocol",
+                "printedName": "LBDelayProtocol",
+                "usr": "s:9LBAnimate15LBDelayProtocolP",
+                "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LBDurationProtocol",
+                "printedName": "LBDurationProtocol",
+                "usr": "s:9LBAnimate18LBDurationProtocolP",
+                "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+              }
             ]
           },
           {
@@ -2593,8 +3514,23 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation",
-              "LBAnimate.LBAnimate_Objc_Core"
+              "LBAnimate.LBAnimate_Objc_Foundation"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "LBDelayProtocol",
+                "printedName": "LBDelayProtocol",
+                "usr": "s:9LBAnimate15LBDelayProtocolP",
+                "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LBDurationProtocol",
+                "printedName": "LBDurationProtocol",
+                "usr": "s:9LBAnimate18LBDurationProtocolP",
+                "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+              }
             ]
           },
           {
@@ -2741,8 +3677,8 @@
               },
               {
                 "kind": "Function",
-                "name": "count",
-                "printedName": "count(_:)",
+                "name": "numberOfBubbles",
+                "printedName": "numberOfBubbles(_:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2757,8 +3693,8 @@
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC5countyAEXDSiF",
-                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC5countyAEXDSiF",
+                "usr": "s:9LBAnimate07UIView_A0C11SoapBubblesC08numberOfD0yAEXDSiF",
+                "mangledName": "$s9LBAnimate07UIView_A0C11SoapBubblesC08numberOfD0yAEXDSiF",
                 "moduleName": "LBAnimate",
                 "declAttributes": [
                   "AccessControl",
@@ -2960,8 +3896,23 @@
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
               "LBAnimate.LBAnimate_Objc_Tap_Gesture_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation",
-              "LBAnimate.LBAnimate_Objc_Core"
+              "LBAnimate.LBAnimate_Objc_Foundation"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "LBDelayProtocol",
+                "printedName": "LBDelayProtocol",
+                "usr": "s:9LBAnimate15LBDelayProtocolP",
+                "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LBDurationProtocol",
+                "printedName": "LBDurationProtocol",
+                "usr": "s:9LBAnimate18LBDurationProtocolP",
+                "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+              }
             ]
           },
           {
@@ -3036,9 +3987,7 @@
                 "usr": "s:9LBAnimate07UIView_A0C7BreatheC4stopyyF",
                 "mangledName": "$s9LBAnimate07UIView_A0C7BreatheC4stopyyF",
                 "moduleName": "LBAnimate",
-                "overriding": true,
                 "declAttributes": [
-                  "Override",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -3058,9 +4007,7 @@
                 "usr": "s:9LBAnimate07UIView_A0C7BreatheC5startyyF",
                 "mangledName": "$s9LBAnimate07UIView_A0C7BreatheC5startyyF",
                 "moduleName": "LBAnimate",
-                "overriding": true,
                 "declAttributes": [
-                  "Override",
                   "AccessControl"
                 ],
                 "funcSelfKind": "NonMutating"
@@ -3191,12 +4138,33 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
-            "superclassUsr": "s:9LBAnimate0A18_Objc_Repeat_StyleC",
+            "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
             "inheritsConvenienceInitializers": true,
             "superclassNames": [
-              "LBAnimate.LBAnimate_Objc_Repeat_Style",
-              "LBAnimate.LBAnimate_Objc_Foundation",
-              "LBAnimate.LBAnimate_Objc_Core"
+              "LBAnimate.LBAnimate_Objc_Foundation"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "LBRepeatProtocol",
+                "printedName": "LBRepeatProtocol",
+                "usr": "s:9LBAnimate16LBRepeatProtocolP",
+                "mangledName": "$s9LBAnimate16LBRepeatProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LBDelayProtocol",
+                "printedName": "LBDelayProtocol",
+                "usr": "s:9LBAnimate15LBDelayProtocolP",
+                "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LBDurationProtocol",
+                "printedName": "LBDurationProtocol",
+                "usr": "s:9LBAnimate18LBDurationProtocolP",
+                "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+              }
             ]
           }
         ],
@@ -3771,14 +4739,59 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "superclassUsr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC",
+        "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
         "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Bouncing_Style",
-          "LBAnimate.LBAnimate_Objc_Foundation",
-          "LBAnimate.LBAnimate_Objc_Core"
+          "LBAnimate.LBAnimate_Objc_Foundation"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LBDelayProtocol",
+            "printedName": "LBDelayProtocol",
+            "usr": "s:9LBAnimate15LBDelayProtocolP",
+            "mangledName": "$s9LBAnimate15LBDelayProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LBDampingProtocol",
+            "printedName": "LBDampingProtocol",
+            "usr": "s:9LBAnimate17LBDampingProtocolP",
+            "mangledName": "$s9LBAnimate17LBDampingProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LBDurationProtocol",
+            "printedName": "LBDurationProtocol",
+            "usr": "s:9LBAnimate18LBDurationProtocolP",
+            "mangledName": "$s9LBAnimate18LBDurationProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LBVelocityProtocol",
+            "printedName": "LBVelocityProtocol",
+            "usr": "s:9LBAnimate18LBVelocityProtocolP",
+            "mangledName": "$s9LBAnimate18LBVelocityProtocolP"
+          }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
       },
       {
         "kind": "Import",
@@ -3981,8 +4994,7 @@
         "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation",
-          "LBAnimate.LBAnimate_Objc_Core"
+          "LBAnimate.LBAnimate_Objc_Foundation"
         ]
       },
       {
@@ -4038,215 +5050,18 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "LBAnimate_Objc_Repeat_Style",
-        "printedName": "LBAnimate_Objc_Repeat_Style",
+        "name": "LBDurationProtocol",
+        "printedName": "LBDurationProtocol",
         "children": [
           {
             "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
+            "name": "duration",
+            "printedName": "duration(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9LBAnimate0A18_Objc_Repeat_StyleC4stopyyF",
-            "mangledName": "$s9LBAnimate0A18_Objc_Repeat_StyleC4stopyyF",
-            "moduleName": "LBAnimate",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9LBAnimate0A18_Objc_Repeat_StyleC5startyyF",
-            "mangledName": "$s9LBAnimate0A18_Objc_Repeat_StyleC5startyyF",
-            "moduleName": "LBAnimate",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "repeatCount",
-            "printedName": "repeatCount(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9LBAnimate0A18_Objc_Repeat_StyleC11repeatCountyACXDSiSgF",
-            "mangledName": "$s9LBAnimate0A18_Objc_Repeat_StyleC11repeatCountyACXDSiSgF",
-            "moduleName": "LBAnimate",
-            "declAttributes": [
-              "AccessControl",
-              "DiscardableResult",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:9LBAnimate0A18_Objc_Repeat_StyleC",
-        "mangledName": "$s9LBAnimate0A18_Objc_Repeat_StyleC",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation",
-          "LBAnimate.LBAnimate_Objc_Core"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LBAnimate"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LBAnimate"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LBAnimate_Objc_Core",
-        "printedName": "LBAnimate_Objc_Core",
-        "declKind": "Class",
-        "usr": "s:9LBAnimate0A10_Objc_CoreC",
-        "mangledName": "$s9LBAnimate0A10_Objc_CoreC",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LBAnimate"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LBAnimate"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "LBAnimate",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LBAnimate"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LBAnimate_Objc_Bouncing_Style",
-        "printedName": "LBAnimate_Objc_Bouncing_Style",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "damping",
-            "printedName": "damping(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
               },
               {
                 "kind": "TypeNominal",
@@ -4256,59 +5071,149 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC7dampingyACXD14CoreFoundation7CGFloatVF",
-            "mangledName": "$s9LBAnimate0A20_Objc_Bouncing_StyleC7dampingyACXD12CoreGraphics7CGFloatVF",
+            "usr": "s:9LBAnimate18LBDurationProtocolPAAE8durationyx14CoreFoundation7CGFloatVF",
+            "mangledName": "$s9LBAnimate18LBDurationProtocolPAAE8durationyx12CoreGraphics7CGFloatVF",
             "moduleName": "LBAnimate",
+            "genericSig": "<τ_0_0 where τ_0_0 : LBAnimate.LBDurationProtocol>",
+            "sugared_genericSig": "<Self where Self : LBAnimate.LBDurationProtocol>",
             "declAttributes": [
               "AccessControl",
               "DiscardableResult",
               "RawDocComment"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "velocity",
-            "printedName": "velocity(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC8velocityyACXD14CoreFoundation7CGFloatVF",
-            "mangledName": "$s9LBAnimate0A20_Objc_Bouncing_StyleC8velocityyACXD12CoreGraphics7CGFloatVF",
-            "moduleName": "LBAnimate",
-            "declAttributes": [
-              "AccessControl",
-              "DiscardableResult",
-              "RawDocComment"
-            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "s:9LBAnimate0A20_Objc_Bouncing_StyleC",
-        "mangledName": "$s9LBAnimate0A20_Objc_Bouncing_StyleC",
+        "declKind": "Protocol",
+        "usr": "s:9LBAnimate18LBDurationProtocolP",
+        "mangledName": "$s9LBAnimate18LBDurationProtocolP",
+        "moduleName": "LBAnimate",
+        "genericSig": "<τ_0_0 : LBAnimate.LBAnimate_Objc_Foundation>",
+        "sugared_genericSig": "<Self : LBAnimate.LBAnimate_Objc_Foundation>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
         "moduleName": "LBAnimate",
         "declAttributes": [
-          "AccessControl"
-        ],
-        "superclassUsr": "s:9LBAnimate0A16_Objc_FoundationC",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "LBAnimate.LBAnimate_Objc_Foundation",
-          "LBAnimate.LBAnimate_Objc_Core"
+          "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LBAnimate",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LBAnimate"
       },
       {
         "kind": "Import",
@@ -4535,79 +5440,282 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
-      "length": 1,
-      "value": "2"
+      "offset": 1997,
+      "length": 3,
+      "value": "150"
     },
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
       "kind": "IntegerLiteral",
-      "offset": 1444,
-      "length": 1,
-      "value": "2"
+      "offset": 2031,
+      "length": 4,
+      "value": "-140"
     },
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
       "kind": "IntegerLiteral",
-      "offset": 1528,
+      "offset": 2068,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2104,
+      "length": 3,
+      "value": "-30"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2162,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "StringLiteral",
+      "offset": 2219,
+      "length": 18,
+      "value": "\"emitterBehaviors\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 2331,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2408,
       "length": 1,
       "value": "0"
     },
     {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2451,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 3845,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 3883,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3920,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3956,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4090,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4138,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4173,
+      "length": 3,
+      "value": "-70"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Balloons\/UIView_LBAnimate.Animations.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 4210,
+      "length": 5,
+      "value": "-0.05"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 508,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 566,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 624,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "IntegerLiteral",
+      "offset": 681,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 1043,
+      "length": 4,
+      "value": "0.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 1076,
+      "length": 4,
+      "value": "0.50"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 1109,
+      "length": 4,
+      "value": "1.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloons\/UIView_LBAnimate.Balloons.swift",
+      "kind": "FloatLiteral",
+      "offset": 2160,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1214,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1356,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1522,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1606,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1657,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1707,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Breathe\/Animation\/UIView_LBAnimate.Animations.Breathe.Animation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1743,
+      "length": 1,
+      "value": "2"
+    },
+    {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 1920,
+      "offset": 1856,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "IntegerLiteral",
-      "offset": 1997,
+      "offset": 1933,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "IntegerLiteral",
-      "offset": 2040,
+      "offset": 1976,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "IntegerLiteral",
-      "offset": 3304,
+      "offset": 3240,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "IntegerLiteral",
-      "offset": 3308,
+      "offset": 3244,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 3566,
+      "offset": 3502,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "IntegerLiteral",
-      "offset": 3654,
+      "offset": 3590,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/SoapBubbles\/UIView_LBAnimate.Animations.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 3662,
+      "offset": 3598,
       "length": 3,
       "value": "0.1"
     },
@@ -4694,6 +5802,13 @@
       "offset": 1750,
       "length": 1,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Protocols\/Damping\/LBDampingProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 203,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Firework\/UIView_LBAnimate.Animations.Firework.swift",
@@ -4829,37 +5944,23 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/Foundation\/LBAnimate_Objc_Foundation.swift",
-      "kind": "FloatLiteral",
-      "offset": 246,
-      "length": 4,
-      "value": "0.00"
-    },
-    {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/Foundation\/LBAnimate_Objc_Foundation.swift",
-      "kind": "FloatLiteral",
-      "offset": 288,
-      "length": 4,
-      "value": "0.00"
-    },
-    {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Firework\/UIView_LBAnimate.Firework.swift",
       "kind": "Array",
-      "offset": 423,
+      "offset": 460,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Firework\/UIView_LBAnimate.Firework.swift",
       "kind": "FloatLiteral",
-      "offset": 761,
+      "offset": 798,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Firework\/UIView_LBAnimate.Firework.swift",
       "kind": "FloatLiteral",
-      "offset": 794,
+      "offset": 831,
       "length": 4,
       "value": "2.00"
     },
@@ -4948,58 +6049,93 @@
       "value": "100"
     },
     {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Protocols\/Velocity\/LBVelocityProtocol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 204,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/Extensions\/NSObject\/NSObject.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 19,
+      "value": "\"CAEmitterBehavior\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/Extensions\/NSObject\/NSObject.swift",
+      "kind": "StringLiteral",
+      "offset": 695,
+      "length": 19,
+      "value": "\"behaviorWithType:\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/Extensions\/NSObject\/NSObject.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 19,
+      "value": "\"behaviorWithType:\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/Extensions\/NSObject\/NSObject.swift",
+      "kind": "StringLiteral",
+      "offset": 1335,
+      "length": 18,
+      "value": "\"behaviorWithType\""
+    },
+    {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
       "kind": "FloatLiteral",
-      "offset": 430,
+      "offset": 699,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
       "kind": "FloatLiteral",
-      "offset": 459,
+      "offset": 728,
       "length": 4,
       "value": "1.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
       "kind": "FloatLiteral",
-      "offset": 488,
+      "offset": 757,
       "length": 4,
       "value": "1.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/PositionAxisStyle\/LBAnimate_Objc_Position_Axis_Style.swift",
       "kind": "FloatLiteral",
-      "offset": 517,
+      "offset": 786,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
-      "offset": 425,
+      "offset": 462,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
-      "offset": 479,
+      "offset": 516,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
-      "offset": 775,
+      "offset": 812,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Press\/UIView_LBAnimate.Press.swift",
       "kind": "FloatLiteral",
-      "offset": 808,
+      "offset": 845,
       "length": 4,
       "value": "0.50"
     },
@@ -5018,6 +6154,13 @@
       "value": "0.01"
     },
     {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/CAEmitterBehavior.swift",
+      "kind": "StringLiteral",
+      "offset": 140,
+      "length": 17,
+      "value": "\"LBAnimate.CAEmitterBehavior\""
+    },
+    {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Animations\/Position\/X\/UIView_LBAnimate.Animations.Position.X.swift",
       "kind": "IntegerLiteral",
       "offset": 3099,
@@ -5027,56 +6170,56 @@
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "IntegerLiteral",
-      "offset": 477,
+      "offset": 514,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "IntegerLiteral",
-      "offset": 532,
+      "offset": 569,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 873,
+      "offset": 910,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 906,
+      "offset": 943,
       "length": 4,
       "value": "2.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 1977,
+      "offset": 2014,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 1985,
+      "offset": 2022,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "IntegerLiteral",
-      "offset": 2049,
+      "offset": 2086,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Balloon\/UIView_LBAnimate.Balloon.swift",
       "kind": "FloatLiteral",
-      "offset": 2068,
+      "offset": 2105,
       "length": 5,
       "value": "180.0"
     },
@@ -5089,15 +6232,8 @@
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
-      "kind": "IntegerLiteral",
-      "offset": 434,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 539,
+      "offset": 534,
       "length": 3,
       "value": "0.5"
     },
@@ -5110,80 +6246,171 @@
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 649,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 954,
+      "offset": 1011,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 987,
+      "offset": 1044,
       "length": 4,
       "value": "0.50"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/SoapBubbles\/UIView_LBAnimate.SoapBubbles.swift",
       "kind": "FloatLiteral",
-      "offset": 1020,
+      "offset": 1077,
       "length": 4,
       "value": "2.00"
     },
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/BouncingStyle\/LBAnimate_Objc_Bouncing_Style.swift",
-      "kind": "IntegerLiteral",
-      "offset": 266,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 235,
+      "length": 11,
+      "value": "\"attractor\""
     },
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Objcs\/BouncingStyle\/LBAnimate_Objc_Bouncing_Style.swift",
-      "kind": "IntegerLiteral",
-      "offset": 312,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 11,
+      "value": "\"attractor\""
     },
     {
-      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
-      "kind": "FloatLiteral",
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
       "offset": 420,
+      "length": 8,
+      "value": "\"radius\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 9,
+      "value": "\"falloff\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 719,
+      "length": 11,
+      "value": "\"stiffness\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
+      "length": 11,
+      "value": "\"zPosition\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 1027,
+      "length": 11,
+      "value": "\"yPosition\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Attractor\/CAEmitterAttractor.swift",
+      "kind": "StringLiteral",
+      "offset": 1192,
+      "length": 10,
+      "value": "\"position\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
+      "kind": "FloatLiteral",
+      "offset": 473,
       "length": 4,
       "value": "1.20"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 474,
+      "offset": 527,
       "length": 4,
       "value": "1.20"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 528,
+      "offset": 581,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 582,
+      "offset": 635,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 749,
+      "offset": 802,
       "length": 4,
       "value": "0.00"
     },
     {
       "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/UIView\/Models\/Breathe\/UIView_LBAnimate.Breathe.swift",
       "kind": "FloatLiteral",
-      "offset": 782,
+      "offset": 835,
       "length": 4,
       "value": "2.00"
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Wave\/CAEmitterWave.swift",
+      "kind": "StringLiteral",
+      "offset": 225,
+      "length": 6,
+      "value": "\"wave\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Wave\/CAEmitterWave.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 6,
+      "value": "\"wave\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Wave\/CAEmitterWave.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Wave\/CAEmitterWave.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 7,
+      "value": "\"force\""
+    },
+    {
+      "filePath": "\/Users\/lioz\/Desktop\/LBSwift\/LBAnimate\/XCFrameworks\/LBAnimate\/Helpers\/CAEmitterBehavior\/Wave\/CAEmitterWave.swift",
+      "kind": "StringLiteral",
+      "offset": 549,
+      "length": 11,
+      "value": "\"frequency\""
     }
   ]
 }

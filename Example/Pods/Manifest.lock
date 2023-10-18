@@ -1,5 +1,5 @@
 PODS:
-  - LBAnimate (0.0.7)
+  - LBAnimate (0.0.8)
 
 DEPENDENCIES:
   - LBAnimate (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LBAnimate: b53e6e759c13471b8c4ecc0178c62be8a2291de6
+  LBAnimate: cdff11af66f6c42f050e3c45f9aefbac63431c21
 
 PODFILE CHECKSUM: bd9222da5645c103ac5eb4f05eb3dd6b08c5b2cb
 

@@ -39,6 +39,45 @@ animation_view.lb_animate?.firework?.didTouch {
 
 <br>
 
+# Balloons #
+
+![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/balloons.gif)
+
+### Example ###
+
+|default values:|
+|:---|
+|<p>- delay -> 0 <br> minScale -> 0.5 <br> maxScale -> 0.5 <br> velocity -> 50.0 <br> numberOfBalloons -> 10.0 <br> - duration -> 2 <br></p>|
+
+```swift
+
+@IBOutlet weak var animation_view: UIView!
+    
+animation_view.lb_animate?.balloons?
+    .delay(0.0)
+    .velocity(50)
+    .minScale(0.4)
+    .maxScale(1.0)
+    .numberOfTaps(1)
+    .numberOfBalloons(50)
+    .attach(UIImage(named: "{ SOME IMAGE NAME }"))
+        
+animation_view.lb_animate?.balloons?.didStop {
+    /* Finish Firework Animation */
+}
+        
+animation_view.lb_animate?.balloons?.didStart {
+    /* Start Firework Animation */
+}
+        
+animation_view.lb_animate?.balloons?.didTouch {
+    /* Did Touch animation view */
+}
+
+```
+
+<br>
+
 # SoapBubbles #
 
 ![alt tag](https://raw.github.com/lioz12131415/LBAnimate/main/Gifs/soap_bubbles.gif)
@@ -47,19 +86,19 @@ animation_view.lb_animate?.firework?.didTouch {
 
 |default values:|
 |:---|
-|<p>- delay -> 0 <br> - scale -> 0.5 <br> - velocity -> 50  <br> - duration -> 2</p>|
+|<p>- delay -> 0 <br> - scale -> 0.5 <br> - velocity -> 50  <br> - duration -> 2 <br> numberOfBubbles -> 10 </p>|
 
 ```swift
 
 @IBOutlet weak var animation_view: UIView!
     
 animation_view.lb_animate?.soapBubbles?
-    .count(10)
     .delay(0.0)
     .scale(0.4)
     .velocity(70)
     .duration(2.0)
     .numberOfTaps(1)
+    .numberOfBubbles(10)
     .attach(UIImage(named: "{ SOME IMAGE NAME }"))
         
 animation_view.lb_animate?.soapBubbles?.didStop {
